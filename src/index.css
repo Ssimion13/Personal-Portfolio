@@ -224,7 +224,9 @@ a {
   height: 350px;
   background-color: red;
 }
-
+.resumeHeaders {
+  text-align: center;
+}
 .resumeImage {
   width: 100%;
   height: 100%;
