@@ -3,7 +3,7 @@ import Title from "../Title";
 import ResumeBody from "./ResumeBody"
 import ResumePicture from "./ResumeClipart.png"
 
-class Resume extends React.Component() {
+class Resume extends React.Component {
   constructor() {
     super()
   }

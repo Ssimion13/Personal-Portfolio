@@ -76,10 +76,6 @@ class ProjectOne extends Component {
 
           </div>
         </CardText>
-        <CardActions>
-          <FlatButton label="Expand" onClick={this.handleExpand} />
-          <FlatButton label="Reduce" onClick={this.handleReduce} />
-        </CardActions>
       </Card>
     );
   }

@@ -1,0 +1,47 @@
+
+
+.projectDiv {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.projects {
+    width: 100%;
+    margin-top: 20px;
+    background-color: whitesmoke
+}
+
+.projectHeader {
+    display: flex;
+    margin: 20px;
+}
+
+.projectHeaderDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.projectHeaderDiv h2 {
+    text-align: center;
+}
+
+.projectScreenshots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.projectImages {
+    width: 50%;
+    height: 50%;
+    margin: 15px;
+    border-radius: 5%;
+    border: 1px solid black;
+}
+
+.projects {
+    width: 100%;
+}

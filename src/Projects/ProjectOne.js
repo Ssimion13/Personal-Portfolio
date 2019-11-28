@@ -80,10 +80,6 @@ class ProjectOne extends Component {
             <img className="projectImages" alt = "videopage" src={VideoPage} / >
           </div>
         </CardText>
-        <CardActions>
-          <FlatButton label="Expand" onClick={this.handleExpand} />
-          <FlatButton label="Reduce" onClick={this.handleReduce} />
-        </CardActions>
       </Card>
     );
   }

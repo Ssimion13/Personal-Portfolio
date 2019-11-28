@@ -11,21 +11,17 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 class App extends Component {
-
-
-
   render() {
-
     return (
       <div className="mainBackground">
         <Navbar />
-        <Switch>
-        <Route exact path = "/" component = {mainBody} />
-        <Route path="/About" component = {About} />
-        <Route path="/Projects" component = {Projects} />
-        <Route path="/Resume" component = {Resume} />
-        <Route path="/ResumePage" component = {ResumePage} />
-        </Switch>
+          <Switch>
+            <Route exact path = "/" component = {mainBody} />
+            <Route path="/About" component = {About} />
+            <Route path="/Projects" component = {Projects} />
+            <Route path="/Resume" component = {Resume} />
+            <Route path="/ResumePage" component = {ResumePage} />
+          </Switch>
         <Footer />
       </div>
     );
