@@ -8,8 +8,6 @@ function Navbar() {
       <Link className="links" to='/About'> About </Link>
       <Link className="links" to='/Projects'> Projects </Link>
       <Link className="links" to='/Resume'> Resume </Link>
-
-
     </div>
   )
 }

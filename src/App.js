@@ -7,6 +7,7 @@ import Projects from "./Projects/Projects";
 import About from "./About/About";
 import Resume from "./Resume/Resume";
 import ResumePage from "./ResumePage";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 class App extends Component {
