@@ -4,10 +4,13 @@ import {Link} from "react-router-dom"
 function Navbar() {
   return (
     <div className="navbar">
-      <Link className="links" to='/'> Home </Link>
-      <Link className="links" to='/About'> About </Link>
-      <Link className="links" to='/Projects'> Projects </Link>
-      <Link className="links" to='/Resume'> Resume </Link>
+      <Link className="links" to='/'> 
+        Scott Simion 
+        Front End Web Developer
+      </Link>
+      {/* <Link className="links" to='/About'> About </Link> */}
+      {/* <Link className="links" to='/Projects'> Projects </Link> */}
+      {/* <Link className="links" to='/Resume'> Resume </Link> */}
     </div>
   )
 }

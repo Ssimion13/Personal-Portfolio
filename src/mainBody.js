@@ -9,7 +9,10 @@ import Button from 'react-bootstrap/Button';
 function mainBody() {
   return (
       <div className = "body">
-        <Title title="Scott Simion" image="http://igazabolszerelem.hu/images/images/959762414548d2b39f33ef.jpg" color="white"/>
+        {/* <Title title="Scott Simion" image="http://igazabolszerelem.hu/images/images/959762414548d2b39f33ef.jpg" color="white"/> */}
+        <div className="mainBodyDiv">
+          Filler space Hoooo
+        </div>
         <div className="thumbnailDiv">
          <div className="thumbnailHolder">
            <Link to='/About' className="thumbnail">
