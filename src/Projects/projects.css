@@ -42,6 +42,23 @@
     border: 1px solid black;
 }
 
+.newMobileProjectImages {
+    width: 75%;
+    height: 75%;
+    margin: 15px;
+    border-radius: 5%;
+    border: 1px solid black;
+}
+
 .projects {
     width: 100%;
+}
+
+.projectCard {
+    margin-bottom: 12px;
+}
+
+.projectCardOuter div:first-of-type {
+    width: 80% !important;
+    padding-right: 0px;
 }

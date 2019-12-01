@@ -2,12 +2,13 @@ import React, {Component} from 'react';
 import {Card, CardActions, CardHeader, CardTitle, CardText} from 'material-ui/Card';
 import FlatButton from 'material-ui/FlatButton';
 import Toggle from 'material-ui/Toggle';
-import frontpage from "./projectImages/frontpage.png"
-import responsive from "./projectImages/Responsive.png";
-import todolist from "./projectImages/todolist.png";
+import FrontPageDots from "./projectImages/frontpagedots.png";
+import MainGameDots from "./projectImages/maingamedots.png";
+import GameEndDot from "./projectImages/gameenddot.png";
 
 
-class ProjectFive extends Component {
+
+class DotsAndLines extends Component {
 
   constructor(props) {
     super(props);
@@ -42,36 +43,38 @@ class ProjectFive extends Component {
       textAlign: "center"
     }
     const Color = { backgroundColor: "whitesmoke"}
-    const titleText = "A proof of concept for me to test using JSON Web Tokens with BCrypt for login and signup authentication, this app allows users to sign in and create their own private to-do lists, with three types of to-dos available for the user to use independently from each other. Uses Media queries for responsiveness for mobile devices."
+    const titleText = "Final group project while at V School. I worked exclusively on the front end on the game itself, using local storage and state to recreate the classic dots and lines game most commonly seen on kids menus at sit down restaurants."
 
     return (
       <Card expanded={this.state.expanded} onExpandChange={this.handleExpandChange}>
         <CardHeader
-          title="Scott To-Do"
+          title="Dots And Lines"
           titleStyle= {headerTextStyle}
-          subtitle="MERN Responsive Project with JWT Authentication and React-BootStrap"
-          avatar={frontpage}
+          subtitle="React Full Stack Group Project, Worked on Front End"
+          avatar={MainGameDots}
           actAsExpander={true}
           showExpandableButton={true}
+          raised={true}
+          className="projectCard"
         />
-        <CardText>
+        {/* <CardText>
           <Toggle
             toggled={this.state.expanded}
             onToggle={this.handleToggle}
             labelPosition="right"
             label="Toggle to see Project"
           />
-        </CardText>
+        </CardText> */}
 
         <CardTitle title={titleText}  titleStyle={pictureTextStyle} expandable={true} />
         <CardText expandable={true} style={Color}>
           <div className="appLinkDiv">
-            <a className="appLink" href="https://scott-to-do.herokuapp.com/"> View Website</a>
+            <a target="_blank" className="appLink" href="https://dots-and-lines.herokuapp.com/"> View Website</a>
           </div>
           <div className = "projectScreenshots">
-            <img className="projectImages" alt = "frontpage" src={frontpage} / >
-            <img className="projectImages" alt = "responsive" src={responsive} / >
-            <img className="projectImages" alt = "todolist" src={todolist} / >
+            <img className="projectImages" alt = "makeyourday" src={FrontPageDots} / >
+            <img className="projectImages" alt = "dadjokepage" src={MainGameDots} / >
+            <img className="projectImages" alt = "favoritejokes" src={GameEndDot} / >
 
           </div>
         </CardText>
@@ -80,4 +83,4 @@ class ProjectFive extends Component {
   }
 }
 
-export default ProjectFive
+export default DotsAndLines

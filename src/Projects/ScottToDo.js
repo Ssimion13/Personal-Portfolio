@@ -2,15 +2,12 @@ import React, {Component} from 'react';
 import {Card, CardActions, CardHeader, CardTitle, CardText} from 'material-ui/Card';
 import FlatButton from 'material-ui/FlatButton';
 import Toggle from 'material-ui/Toggle';
-import MakeYourDay from "./projectImages/MakeYourDay.png";
-import DadJokePage from "./projectImages/DadJokePage.png";
-import DogPage from "./projectImages/DogPage.png";
-import VideoPage from "./projectImages/VideoPage.png";
-import FavoriteJokes from "./projectImages/FavoriteJokes.png";
-import FavoriteDogs from "./projectImages/FavoriteDogs.png";
+import frontpage from "./projectImages/frontpage.png"
+import responsive from "./projectImages/Responsive.png";
+import todolist from "./projectImages/todolist.png";
 
 
-class ProjectOne extends Component {
+class ScottToDo extends Component {
 
   constructor(props) {
     super(props);
@@ -45,39 +42,39 @@ class ProjectOne extends Component {
       textAlign: "center"
     }
     const Color = { backgroundColor: "whitesmoke"}
-    const titleText = "This full stack project used the Dog and Dad Joke APIs to make a website that would (hopefully!) cheer anyone up on a bad day."
+    const titleText = "A proof of concept for me to test using JSON Web Tokens with BCrypt for login and signup authentication, this app allows users to sign in and create their own private to-do lists, with three types of to-dos available for the user to use independently from each other. Uses Media queries for responsiveness for mobile devices."
 
     return (
       <Card expanded={this.state.expanded} onExpandChange={this.handleExpandChange}>
         <CardHeader
-          title="Make Your Day"
+          title="Scott To-Do"
           titleStyle= {headerTextStyle}
-          subtitle="React Full Stack Project w/ API use"
-          avatar={MakeYourDay}
+          subtitle="MERN Responsive Project with JWT Authentication and React-BootStrap"
+          avatar={frontpage}
           actAsExpander={true}
           showExpandableButton={true}
+          raised={true}
+          className="projectCard"
         />
-        <CardText>
+        {/* <CardText>
           <Toggle
             toggled={this.state.expanded}
             onToggle={this.handleToggle}
             labelPosition="right"
             label="Toggle to see Project"
           />
-        </CardText>
+        </CardText> */}
 
         <CardTitle title={titleText}  titleStyle={pictureTextStyle} expandable={true} />
         <CardText expandable={true} style={Color}>
           <div className="appLinkDiv">
-            <a className="appLink" href="https://make-your-day.herokuapp.com/"> View Website</a>
+            <a target="_blank" className="appLink" href="https://scott-to-do.herokuapp.com/"> View Website</a>
           </div>
           <div className = "projectScreenshots">
-            <img className="projectImages" alt = "makeyourday" src={MakeYourDay} / >
-            <img className="projectImages" alt = "dadjokepage" src={DadJokePage} / >
-            <img className="projectImages" alt = "favoritejokes" src={FavoriteJokes} / >
-            <img className="projectImages" alt = "dogpage" src={DogPage} / >
-            <img className="projectImages" alt = "favoritedogs" src={FavoriteDogs} / >
-            <img className="projectImages" alt = "videopage" src={VideoPage} / >
+            <img className="projectImages" alt = "frontpage" src={frontpage} />
+            <img className="projectImages" alt = "responsive" src={responsive} />
+            <img className="projectImages" alt = "todolist" src={todolist} />
+
           </div>
         </CardText>
       </Card>
@@ -85,4 +82,4 @@ class ProjectOne extends Component {
   }
 }
 
-export default ProjectOne
+export default ScottToDo

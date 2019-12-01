@@ -2,12 +2,14 @@ import React, {Component} from 'react';
 import {Card, CardActions, CardHeader, CardTitle, CardText} from 'material-ui/Card';
 import FlatButton from 'material-ui/FlatButton';
 import Toggle from 'material-ui/Toggle';
-import frontpage from "./projectImages/frontpage.png"
-import responsive from "./projectImages/Responsive.png";
-import todolist from "./projectImages/todolist.png";
+import LoseSS from "./projectImages/LoseSS.png";
+import WinSS from "./projectImages/WinSS.png";
+import BustedSS from "./projectImages/BustedSS.png";
+import WholeBlackjackSS from "./projectImages/WholeBlackjackSS.png";
 
 
-class ProjectSix extends Component {
+
+class JapaneseOnTheGo extends Component {
 
   constructor(props) {
     super(props);
@@ -42,36 +44,39 @@ class ProjectSix extends Component {
       textAlign: "center"
     }
     const Color = { backgroundColor: "whitesmoke"}
-    const titleText = "A proof of concept for me to test using JSON Web Tokens with BCrypt for login and signup authentication, this app allows users to sign in and create their own private to-do lists, with three types of to-dos available for the user to use independently from each other. Uses Media queries for responsiveness for mobile devices."
+    const titleText = "This full stack project used the card API to make a rudimentary blackjack simulator that compares your cards to a computer's random result."
 
     return (
       <Card expanded={this.state.expanded} onExpandChange={this.handleExpandChange}>
         <CardHeader
-          title="Scott To-Do"
+          title="Blackjack"
           titleStyle= {headerTextStyle}
-          subtitle="MERN Responsive Project with JWT Authentication and React-BootStrap"
-          avatar={frontpage}
+          subtitle="React Full Stack Project w/ API use"
+          avatar={WholeBlackjackSS}
           actAsExpander={true}
           showExpandableButton={true}
+          raised={true}
+          className="projectCard"
         />
-        <CardText>
+        {/* <CardText>
           <Toggle
             toggled={this.state.expanded}
             onToggle={this.handleToggle}
             labelPosition="right"
             label="Toggle to see Project"
           />
-        </CardText>
+        </CardText> */}
 
         <CardTitle title={titleText}  titleStyle={pictureTextStyle} expandable={true} />
         <CardText expandable={true} style={Color}>
-          <div className="appLinkDiv">
-            <a className="appLink" href="https://scott-to-do.herokuapp.com/"> View Website</a>
+          <div className = "appLinkDiv">
+            <a target="_blank" className="appLink" href="http://thriftstoreblackjack.surge.sh/"> View Website</a>
           </div>
           <div className = "projectScreenshots">
-            <img className="projectImages" alt = "frontpage" src={frontpage} / >
-            <img className="projectImages" alt = "responsive" src={responsive} / >
-            <img className="projectImages" alt = "todolist" src={todolist} / >
+            <img className="projectImages" alt = "blackjackpicture" src={WholeBlackjackSS} / >
+            <img className="projectImages" alt = "blackjackwin" src={WinSS} / >
+            <img className="projectImages" alt = "blackjacklose" src={LoseSS} / >
+            <img className="projectImages" alt = "blackjackbusted" src={BustedSS} / >
 
           </div>
         </CardText>
@@ -80,4 +85,4 @@ class ProjectSix extends Component {
   }
 }
 
-export default ProjectSix
+export default JapaneseOnTheGo

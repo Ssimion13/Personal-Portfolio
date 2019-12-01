@@ -7,23 +7,24 @@ import Projects from "./Projects/Projects";
 import About from "./About/About";
 import Resume from "./Resume/Resume";
 import ResumePage from "./ResumePage";
-import 'bootstrap/dist/css/bootstrap.min.css';
-
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 
 class App extends Component {
   render() {
     return (
-      <div className="mainBackground">
-        <Navbar />
-          <Switch>
-            <Route exact path = "/" component = {mainBody} />
-            <Route path="/About" component = {About} />
-            <Route path="/Projects" component = {Projects} />
-            <Route path="/Resume" component = {Resume} />
-            <Route path="/ResumePage" component = {ResumePage} />
-          </Switch>
-        <Footer />
-      </div>
+      <MuiThemeProvider>
+        <div className="mainBackground">
+          <Navbar />
+            <Switch>
+              <Route exact path = "/" component = {mainBody} />
+              <Route path="/About" component = {About} />
+              <Route path="/Projects" component = {Projects} />
+              <Route path="/Resume" component = {Resume} />
+              <Route path="/ResumePage" component = {ResumePage} />
+            </Switch>
+          <Footer />
+        </div>
+      </MuiThemeProvider>
     );
   }
 }
