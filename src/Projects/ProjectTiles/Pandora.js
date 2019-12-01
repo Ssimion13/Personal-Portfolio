@@ -2,10 +2,10 @@ import React, {Component} from 'react';
 import {Card, CardActions, CardHeader, CardTitle, CardText} from 'material-ui/Card';
 import FlatButton from 'material-ui/FlatButton';
 import Toggle from 'material-ui/Toggle';
-import pandoraGiftCard from "./projectImages/pandora/pandoraGiftCard.PNG"
-import pandoraGiftCard2 from "./projectImages/pandora/pandoraGiftCard2.PNG"
-import pandoraMiniHeart from "./projectImages/pandora/pandoraMiniHeart.PNG"
-import pandoraSizeGuide from "./projectImages/pandora/pandoraSizeGuide.PNG"
+import pandoraGiftCard from "../projectImages/pandora/pandoraGiftCard.PNG"
+import pandoraGiftCard2 from "../projectImages/pandora/pandoraGiftCard2.PNG"
+import pandoraMiniHeart from "../projectImages/pandora/pandoraMiniHeart.PNG"
+import pandoraSizeGuide from "../projectImages/pandora/pandoraSizeGuide.PNG"
 
 
 

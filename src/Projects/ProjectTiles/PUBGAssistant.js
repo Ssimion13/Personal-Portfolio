@@ -1,14 +1,11 @@
 import React, {Component} from 'react';
 import {Card, CardActions, CardHeader, CardTitle, CardText} from 'material-ui/Card';
-import FlatButton from 'material-ui/FlatButton';
-import Toggle from 'material-ui/Toggle';
-import FrontPageDots from "./projectImages/frontpagedots.png";
-import MainGameDots from "./projectImages/maingamedots.png";
-import GameEndDot from "./projectImages/gameenddot.png";
+
+import pubgAssistant1 from "../projectImages/PUBG/PUBGAssistant1.PNG"
+import pubgAssistant2 from "../projectImages/PUBG/PUBGAssistant2.PNG"
 
 
-
-class DotsAndLines extends Component {
+class PUBGAssistant extends Component {
 
   constructor(props) {
     super(props);
@@ -43,39 +40,41 @@ class DotsAndLines extends Component {
       textAlign: "center"
     }
     const Color = { backgroundColor: "whitesmoke"}
-    const titleText = "Final group project while at V School. I worked exclusively on the front end on the game itself, using local storage and state to recreate the classic dots and lines game most commonly seen on kids menus at sit down restaurants."
+    const titleText = "This full stack project used the PlayerUnknown's BattleGrounds API to give users random start locations for the game, as well as allowing the user to compare stats with other users (Pre 2019)"
 
     return (
-      <Card expanded={this.state.expanded} onExpandChange={this.handleExpandChange}>
+      <Card className="projectCard" expanded={this.state.expanded} onExpandChange={this.handleExpandChange}>
         <CardHeader
-          title="Dots And Lines"
+          title="PUBG Assistant"
           titleStyle= {headerTextStyle}
-          subtitle="React Full Stack Group Project, Worked on Front End"
-          avatar={MainGameDots}
+          subtitle="React Full Stack Project w/ API use"
+          avatar={pubgAssistant1}
           actAsExpander={true}
           showExpandableButton={true}
           raised={true}
-          className="projectCard"
+          className="projectCardOuter"
         />
         {/* <CardText>
           <Toggle
             toggled={this.state.expanded}
             onToggle={this.handleToggle}
             labelPosition="right"
-            label="Toggle to see Project"
+            label="Toggle"
           />
         </CardText> */}
 
         <CardTitle title={titleText}  titleStyle={pictureTextStyle} expandable={true} />
         <CardText expandable={true} style={Color}>
           <div className="appLinkDiv">
-            <a target="_blank" className="appLink" href="https://dots-and-lines.herokuapp.com/"> View Website</a>
+            <a target="_blank" className="appLink" href="https://pubgassistant.herokuapp.com"> View Website</a>
           </div>
-          <div className = "projectScreenshots">
-            <img className="projectImages" alt = "makeyourday" src={FrontPageDots} / >
-            <img className="projectImages" alt = "dadjokepage" src={MainGameDots} / >
-            <img className="projectImages" alt = "favoritejokes" src={GameEndDot} / >
-
+          <div className="projectScreenshots">
+            <a href="https://pubgassistant.herokuapp.com/DropGenerator">
+              <img className="newMobileProjectImages" alt="favoritedogs" src={pubgAssistant1} />
+            </a>
+            <a href="https://pubgassistant.herokuapp.com/DropGenerator">
+              <img className="newMobileProjectImages" alt="videopage" src={pubgAssistant2} />
+            </a>
           </div>
         </CardText>
       </Card>
@@ -83,4 +82,4 @@ class DotsAndLines extends Component {
   }
 }
 
-export default DotsAndLines
+export default PUBGAssistant

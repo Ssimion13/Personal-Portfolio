@@ -1,15 +1,13 @@
 import React, {Component} from 'react';
 import {Card, CardActions, CardHeader, CardTitle, CardText} from 'material-ui/Card';
-import FlatButton from 'material-ui/FlatButton';
-import Toggle from 'material-ui/Toggle';
-import LoseSS from "./projectImages/LoseSS.png";
-import WinSS from "./projectImages/WinSS.png";
-import BustedSS from "./projectImages/BustedSS.png";
-import WholeBlackjackSS from "./projectImages/WholeBlackjackSS.png";
+import LoseSS from "../projectImages/blackjack/LoseSS.png";
+import WinSS from "../projectImages/blackjack/WinSS.png";
+import BustedSS from "../projectImages/blackjack/BustedSS.png";
+import WholeBlackjackSS from "../projectImages/blackjack/WholeBlackjackSS.png";
 
 
 
-class JapaneseOnTheGo extends Component {
+class BlackJack extends Component {
 
   constructor(props) {
     super(props);
@@ -85,4 +83,4 @@ class JapaneseOnTheGo extends Component {
   }
 }
 
-export default JapaneseOnTheGo
+export default BlackJack

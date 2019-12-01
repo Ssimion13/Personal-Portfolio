@@ -1,17 +1,12 @@
 import React, {Component} from 'react';
 import {Card, CardActions, CardHeader, CardTitle, CardText} from 'material-ui/Card';
 import FlatButton from 'material-ui/FlatButton';
-import { Modal } from '@material-ui/core';
 import Toggle from 'material-ui/Toggle';
-import MakeYourDay from "./projectImages/MakeYourDay.png";
-import DadJokePage from "./projectImages/DadJokePage.png";
-import DogPage from "./projectImages/DogPage.png";
-import VideoPage from "./projectImages/VideoPage.png";
-import FavoriteJokes from "./projectImages/FavoriteJokes.png";
-import FavoriteDogs from "./projectImages/FavoriteDogs.png";
+import JapaneseOnTheGo1 from '../projectImages/japaneseonthego/JapaneseOnTheGo1.PNG'
+import JapaneseOnTheGo2 from '../projectImages/japaneseonthego/JapaneseOnTheGo2.PNG'
 
 
-class PUBGAssistant extends Component {
+class JapaneseOnTheGo extends Component {
 
   constructor(props) {
     super(props);
@@ -46,40 +41,41 @@ class PUBGAssistant extends Component {
       textAlign: "center"
     }
     const Color = { backgroundColor: "whitesmoke"}
-    const titleText = "This full stack project used the Dog and Dad Joke APIs to make a website that would (hopefully!) cheer anyone up on a bad day."
+    const titleText = "This project was created to help a friend (and others) who are learning Japanese to practice their basic written language skills."
 
     return (
-      <Card className="projectCard" expanded={this.state.expanded} onExpandChange={this.handleExpandChange}>
+      <Card expanded={this.state.expanded} onExpandChange={this.handleExpandChange}>
         <CardHeader
-          title="Make Your Day"
+          title="Japanese On The Go"
           titleStyle= {headerTextStyle}
-          subtitle="React Full Stack Project w/ API use"
-          avatar={MakeYourDay}
+          subtitle="React Front End Project"
+          avatar={JapaneseOnTheGo1}
           actAsExpander={true}
           showExpandableButton={true}
           raised={true}
-          className="projectCardOuter"
+          className="projectCard"
         />
         {/* <CardText>
           <Toggle
             toggled={this.state.expanded}
             onToggle={this.handleToggle}
             labelPosition="right"
-            label="Toggle"
+            label="Toggle to see Project"
           />
         </CardText> */}
 
         <CardTitle title={titleText}  titleStyle={pictureTextStyle} expandable={true} />
         <CardText expandable={true} style={Color}>
-          <div className="appLinkDiv">
-            <a target="_blank" className="appLink" href="https://make-your-day.herokuapp.com/"> View Website</a>
+          <div className = "appLinkDiv">
+            <a target="_blank" className="appLink" href="http://thriftstoreblackjack.surge.sh/"> View Website</a>
           </div>
           <div className = "projectScreenshots">
-            <img className="projectImages" alt="dadjokepage" src={DadJokePage} />
-            <img className="projectImages" alt="favoritejokes" src={FavoriteJokes} />
-            <img className="projectImages" alt="dogpage" src={DogPage} />
-            <img className="projectImages" alt="favoritedogs" src={FavoriteDogs} />
-            <img className="projectImages" alt="videopage" src={VideoPage} />
+            <a href="https://japaneseonthego.com/HiraganaTest">
+              <img className="newMobileProjectImages" alt = "blackjackpicture" src={JapaneseOnTheGo1} />
+            </a>
+            <a href="https://japaneseonthego.com/HiraganaTest">
+              <img className="newMobileProjectImages" alt = "blackjackwin" src={JapaneseOnTheGo2} />
+            </a>
           </div>
         </CardText>
       </Card>
@@ -87,4 +83,4 @@ class PUBGAssistant extends Component {
   }
 }
 
-export default PUBGAssistant
+export default JapaneseOnTheGo

@@ -17,7 +17,7 @@ class Projects extends React.Component {
     //TODO: Style this more than just base text. 
     return (
       <div className="projects">
-        <Title title="Projects" image="https://s3.envato.com/files/239314206/590.jpg" opacity="0.5" />
+        <Title title="My Projects" image="https://s3.envato.com/files/239314206/590.jpg" opacity="0.5" />
         <div className="projectHeader">
           <div className="projectHeaderDiv">
             <h2> These are some of the projects, both personal and professional that I have worked on in my career so far. </h2>

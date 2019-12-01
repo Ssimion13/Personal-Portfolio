@@ -2,17 +2,10 @@ import React, {Component} from 'react';
 import {Card, CardActions, CardHeader, CardTitle, CardText} from 'material-ui/Card';
 import FlatButton from 'material-ui/FlatButton';
 import Toggle from 'material-ui/Toggle';
-import pandoraGiftCard from "./projectImages/pandora/pandoraGiftCard.PNG"
-import annsummersCheckout from "./projectImages/annsummers/annsummersCheckout.PNG"
-import annsummersCheckout2 from "./projectImages/annsummers/annsummersCheckout2.PNG"
-import annsummersCAndC from "./projectImages/annsummers/annsummersCAndC.PNG"
-import annsummersCAndC2 from "./projectImages/annsummers/annsummersCAndC2.PNG"
-import annsummersHome from "./projectImages/annsummers/annsummersHome.PNG"
-import annsummersHome2 from "./projectImages/annsummers/annsummersHome2.PNG"
 
 
 
-class AnnSummers extends Component {
+class TommyBahama extends Component {
 
   constructor(props) {
     super(props);
@@ -54,7 +47,7 @@ class AnnSummers extends Component {
         <CardHeader
           title="Ann Summers"
           titleStyle= {headerTextStyle}
-          subtitle="Mobile Site Production for British Adult Store"
+          subtitle="Mobile Site Production for Tommy Bahama"
           avatar={annsummersHome}
           actAsExpander={true}
           showExpandableButton={true}
@@ -101,4 +94,4 @@ class AnnSummers extends Component {
   }
 }
 
-export default AnnSummers
+export default TommyBahama

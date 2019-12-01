@@ -1,10 +1,11 @@
 import React from "react";
-import JapaneseOnTheGo from "./JapaneseOnTheGo";
-import PUBGAssistant from "./PUBGAssistant";
-import DotsAndLines from "./DotsAndLines";
-import Pandora from "./Pandora";
-import AnnSummers from "./AnnSummers";
-import TommyBahama from './TommyBahama';
+import JapaneseOnTheGo from "./ProjectTiles/JapaneseOnTheGo";
+import PUBGAssistant from "./ProjectTiles/PUBGAssistant";
+import DotsAndLines from "./ProjectTiles/DotsAndLines";
+import Pandora from "./ProjectTiles/Pandora";
+import AnnSummers from "./ProjectTiles/AnnSummers";
+import BlackJack from "./ProjectTiles/BlackJack";
+// import TommyBahama from './TommyBahama';
 
 function ProjectBody (){
   return (
@@ -12,10 +13,11 @@ function ProjectBody (){
         <div className="projects">
           <Pandora />
           <AnnSummers />
-          <TommyBahama />
+          {/* <TommyBahama /> */}
           <JapaneseOnTheGo />
           <PUBGAssistant />
           <DotsAndLines />
+          <BlackJack />
         </div>
       </div>
   )
