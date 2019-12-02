@@ -15,7 +15,7 @@ class Resume extends React.Component {
   render() {
     return (
       <div className="body">
-      <Title image={ResumePicture} position="top center" height="400px" />
+      {/* <Title image={ResumePicture} position="top center" height="400px" /> */}
       <ResumeBody />
       </div>
     )

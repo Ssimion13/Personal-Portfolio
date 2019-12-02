@@ -1,14 +1,10 @@
 import React from "react";
-import resume from "./Resume/Resume-1.jpg";
-import resume2 from "./Resume/Resume-2.jpg";
+import resume from "./Resume/resume-1.jpg";
 
 function ResumePage(){
   return (
     <div className="resumeImage">
-      <h1 className="resumeHeaders"> Page 1 of 2 </h1>
       <img  alt='backgroundresumepage' src={resume} />
-      <h1 className="resumeHeaders" > Page 2 of 2  </h1>
-      <img alt='backgroundresumepage' src={resume2} />
     </div>
   )
 }

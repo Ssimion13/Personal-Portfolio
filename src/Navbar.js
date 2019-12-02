@@ -4,9 +4,8 @@ import {Link} from "react-router-dom"
 function Navbar() {
   return (
     <div className="navbar">
-      <Link className="links" to='/'> 
+      <Link className="navbarLinks" to='/'> 
         Scott Simion 
-        Front End Web Developer
       </Link>
       {/* <Link className="links" to='/About'> About </Link> */}
       {/* <Link className="links" to='/Projects'> Projects </Link> */}
