@@ -52,7 +52,7 @@ class PUBGAssistant extends Component {
           actAsExpander={true}
           showExpandableButton={true}
           raised={true}
-          className="projectCardOuter"
+          className="projectCard"
         />
         {/* <CardText>
           <Toggle

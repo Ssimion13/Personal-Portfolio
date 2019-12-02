@@ -51,7 +51,7 @@ class AnnSummers extends Component {
         <CardHeader
           title="Ann Summers"
           titleStyle= {headerTextStyle}
-          subtitle="Mobile Site Production for British Adult Store"
+          subtitle="Project with 64labs: Mobile Website for British Adult Store"
           avatar={annsummersHome}
           actAsExpander={true}
           showExpandableButton={true}

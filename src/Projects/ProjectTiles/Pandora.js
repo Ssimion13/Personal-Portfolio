@@ -49,7 +49,7 @@ class Pandora extends Component {
         <CardHeader
           title="Pandora Jewelry"
           titleStyle= {headerTextStyle}
-          subtitle="Mobile Site Production For US, UK, and DE Pandora"
+          subtitle="Project with 64Labs: Mobile website For US, UK, and DE Pandora"
           avatar={pandoraMiniHeart}
           actAsExpander={true}
           showExpandableButton={true}

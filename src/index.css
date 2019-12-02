@@ -307,6 +307,7 @@ a {
 .aboutBodies {
   background-color: #F8F8FF;
   display: flex;
+  padding-top: 20px;
 
 }
 .aboutWebDevelopment {
@@ -409,9 +410,6 @@ img {
 
 
 @media(max-width: 600px) {
-  .thumbnailDiv {
-    height: 1000px;
-  }
   .thumbnailHolder {
     height: 100%;
     flex-direction: column;
@@ -419,14 +417,37 @@ img {
   .portrait {
     width: 100%;
   }
+  .frontText {
+    text-align: center;
+  }
+
+  .frontText h1 {
+    font-size: 30px;
+  }
+
+  .aboutProfile p {
+    font-size: 20px;
+  }
+
+  .aboutBackground p {
+    font-size: 20px;
+  }
+
+  .aboutWebDevelopment p {
+    font-size: 20px;
+  }
+  .footerLinks {
+    width: auto;
+  }
+
   .aboutBodies {
     display: block;
     padding-top: 20px;
     padding-bottom: 20px;
   }
   .thumbnail {
-    border-bottom: 1px solid black;
     width:60%;
+    margin-right: 0px;
   }
   .appLinkDiv {
     display: flex;
@@ -445,8 +466,13 @@ img {
   }
   .downloadButtonDiv {
     width: 80%;
-
   }
+
+  .projectCard {
+    width: auto;
+    margin-bottom: 6px;
+  }
+
 }
 @media(max-width: 400px) {
   .links {
