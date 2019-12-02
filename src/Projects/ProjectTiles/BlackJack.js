@@ -45,7 +45,7 @@ class BlackJack extends Component {
     const titleText = "This full stack project used the card API to make a rudimentary blackjack simulator that compares your cards to a computer's random result."
 
     return (
-      <Card expanded={this.state.expanded} onExpandChange={this.handleExpandChange}>
+      <Card className="projectCard" expanded={this.state.expanded} onExpandChange={this.handleExpandChange}>
         <CardHeader
           title="Blackjack"
           titleStyle= {headerTextStyle}
@@ -68,7 +68,7 @@ class BlackJack extends Component {
         <CardTitle title={titleText}  titleStyle={pictureTextStyle} expandable={true} />
         <CardText expandable={true} style={Color}>
           <div className = "appLinkDiv">
-            <a target="_blank" className="appLink" href="http://thriftstoreblackjack.surge.sh/"> View Website</a>
+            <a target="_blank" className="appLink" href="http://thriftstoreblackjack.surge.sh/"> View </a>
           </div>
           <div className = "projectScreenshots">
             <img className="projectImages" alt = "blackjackpicture" src={WholeBlackjackSS} / >

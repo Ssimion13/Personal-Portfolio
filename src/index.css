@@ -50,25 +50,38 @@ a {
   display: none;
 }
 
+.margin-top-medium {
+  margin-top: 8px;
+}
+
+.direction-column {
+  flex-direction: column;
+}
+
+.bold {
+  font-weight: bold;
+}
+
 /* global */
 
 
-.frontVideo {
+.frontText {
   height: 60vh;
-  background-color: #000;
+  background: linear-gradient(#000000, #222222);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .fade-in {
   opacity:1;
-  width:100px;
-  height:100px;
   transition: width 0.5s, height 0.5s, opacity 0.5s 0.5s;
 }
 
 .fade-out {
   opacity:0;
-  width:0;
-  height:0;
   transition: width 0.5s 0.5s, height 0.5s 0.5s, opacity 0.5s;
 }
 
@@ -99,7 +112,7 @@ a {
 .links {
   font-size: 25px;
   font-weight: bold;
-  color: #000000;
+  color: #222222;
   border-radius: 15px;
   margin-top: auto;
   margin-bottom: auto;
@@ -114,7 +127,7 @@ a {
 .navbarLinks {
   font-size: 25px;
   font-weight: bold;
-  color: #000000;
+  color: #222222;
   border-radius: 15px;
   margin-top: auto;
   margin-bottom: auto;
@@ -133,21 +146,21 @@ a {
 
 .footer {
   width: 100%;
-  background-color: #000000;
+  background: linear-gradient(#000000, #111111);
   position: absolute;
   bottom: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   color: #ffffff;
-  opacity: 0.9;
+  opacity: 0.95;
 }
 
 .footerPlaceholderIcons {
   font-size: 18px;
   font-weight: bold;
   color: white;
-  border-radius: 15px;
+  border-radius: 5px;
   margin-top: auto;
   margin-bottom: auto;
   padding: 8px;
@@ -155,7 +168,7 @@ a {
 }
 .footerPlaceholderIcons:hover {
   transition-duration: 0.4s;
-  background-color: grey;
+  text-decoration: none;
 }
 
 
@@ -208,8 +221,8 @@ a {
 .personalInformation {
   background-color: linear-gradient(-45deg, hsl(196, 40%, 91%),hsl(196, 21%, 97%));
   display: flex;
+  flex-direction: column;
   border-radius: 10px;
-  grid-area: picture;
 }
 .infoDivider {
   width: 100%;
@@ -242,15 +255,15 @@ a {
   width: 33%;
   height: 90%;
   text-align: center;
-  background-color: #efefef;
+  background-color: #ffffff;
   padding: 20px;
   margin-right: 10px;
 }
 
 .thumbnail:hover  {
   transition: all 0.7s;
-  background-color: #FFFFFF;
-  color: #000;
+  background-color: #efefef;
+  color: #222222;
   text-decoration: none;
   border-radius: 20px;
 }
@@ -271,29 +284,20 @@ a {
 
 .sideBodies {
   width: 95%;
-  background-color: whitesmoke;
+  background-color: #fafafa;
   margin-left: auto;
   margin-right: auto;
 }
 
 .aboutBodies {
-  width: 98%;
-  margin-top: 15px;
-  background-color: whitesmoke;
-  margin-left: auto;
-  margin-right: auto;
-  display: grid;
-  grid-template-areas:
-  'picture aboutWeb aboutWeb'
-  'picture aboutme aboutme'
-  'picture mybackground mybackground';
+  background-color: #fafafa;
+  display: flex;
 
 }
 .aboutWebDevelopment {
   grid-area: aboutWeb;
   font-size: 25px;
   padding: 10px;
-  border-bottom: 1px solid black;
 }
 .borders {
   font-size: 30px;
@@ -302,7 +306,6 @@ a {
 
 .aboutProfile {
   padding: 10px;
-  border-bottom: 1px solid black;
   grid-area: aboutme;
   font-size: 25px;
 }
@@ -337,7 +340,7 @@ img {
 }
 
 .appLink:hover {
-  color: #000;
+  color: #222222;
   text-decoration: none;
 }
 
@@ -350,6 +353,7 @@ img {
   display: flex;
   text-align: center;
   align-items: center;
+  color: #ffffff;
 
 
 }
@@ -361,7 +365,16 @@ img {
   text-align: center;
   justify-content: center;
   height: 200px;
+  text-decoration: none;
 }
+
+.resumeDownloadButton:hover {
+  background-color: #fff;
+  color: #222222 !important;
+  transition-duration: 1s;
+  text-decoration: none;
+}
+
 .resumeBody {
   width: 100%;
   background-color: whitesmoke;
@@ -374,7 +387,6 @@ img {
 .buttonText {
   font-size: 30px;
   margin: auto;
-  color: white;
 }
 
 
@@ -403,6 +415,7 @@ img {
     text-align: center;
     align-items: center;
     justify-content: center;
+    width: 95%;
   }
   .buttonText {
     font-size: 20px;

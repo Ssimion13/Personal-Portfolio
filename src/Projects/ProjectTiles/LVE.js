@@ -47,7 +47,7 @@ class LVE extends Component {
     const titleText = "A project run with React/Redux on the Mobify Platform, with data being parsed through JQuery; I worked extensively throughout the mobile site on several locations, most notably on the My Account page, PDP pages, and interactivity between pages."
 
     return (
-      <Card expanded={this.state.expanded} onExpandChange={this.handleExpandChange}>
+      <Card className="projectCard" expanded={this.state.expanded} onExpandChange={this.handleExpandChange}>
         <CardHeader
           title="Pandora Jewelry"
           titleStyle= {headerTextStyle}
@@ -70,7 +70,7 @@ class LVE extends Component {
         <CardTitle title={titleText}  titleStyle={pictureTextStyle} expandable={true} />
         <CardText expandable={true} style={Color}>
           <div className="appLinkDiv">
-            <a target="_blank" className="appLink" href="http://lvendoscopy.s3-website-us-east-1.amazonaws.com/"> View Website </a>
+            <a target="_blank" className="appLink" href="http://lvendoscopy.s3-website-us-east-1.amazonaws.com/"> View </a>
             <a target="_blank" href="https://github.com/Ssimion13/lvewebsite"> View Github </a>
           </div>
           <div className = "projectScreenshots">

@@ -66,7 +66,7 @@ class PUBGAssistant extends Component {
         <CardTitle title={titleText}  titleStyle={pictureTextStyle} expandable={true} />
         <CardText expandable={true} style={Color}>
           <div className="appLinkDiv">
-            <a target="_blank" className="appLink" href="https://pubgassistant.herokuapp.com"> View Website</a>
+            <a target="_blank" className="appLink" href="https://pubgassistant.herokuapp.com"> View </a>
           </div>
           <div className="projectScreenshots">
             <a href="https://pubgassistant.herokuapp.com/DropGenerator">

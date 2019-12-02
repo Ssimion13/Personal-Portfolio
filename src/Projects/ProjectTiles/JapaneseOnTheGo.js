@@ -44,7 +44,7 @@ class JapaneseOnTheGo extends Component {
     const titleText = "This project was created to help a friend (and others) who are learning Japanese to practice their basic written language skills."
 
     return (
-      <Card expanded={this.state.expanded} onExpandChange={this.handleExpandChange}>
+      <Card className="projectCard" expanded={this.state.expanded} onExpandChange={this.handleExpandChange}>
         <CardHeader
           title="Japanese On The Go"
           titleStyle= {headerTextStyle}
@@ -67,7 +67,7 @@ class JapaneseOnTheGo extends Component {
         <CardTitle title={titleText}  titleStyle={pictureTextStyle} expandable={true} />
         <CardText expandable={true} style={Color}>
           <div className = "appLinkDiv">
-            <a target="_blank" className="appLink" href="http://thriftstoreblackjack.surge.sh/"> View Website</a>
+            <a target="_blank" className="appLink" href="http://thriftstoreblackjack.surge.sh/"> View </a>
           </div>
           <div className = "projectScreenshots">
             <a href="https://japaneseonthego.com/HiraganaTest">

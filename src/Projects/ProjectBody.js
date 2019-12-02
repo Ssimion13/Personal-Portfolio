@@ -11,7 +11,7 @@ import LVE from "./ProjectTiles/LVE"
 function ProjectBody (){
   return (
     <div className="projectDiv">
-        <div className="projects">
+        <div className="projects flex align-center justify-center direction-column">
           <Pandora />
           <AnnSummers />
           {/* <TommyBahama /> */}

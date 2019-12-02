@@ -47,7 +47,7 @@ class Pandora extends Component {
     const titleText = "A project run with React/Redux on the Mobify Platform, with data being parsed through JQuery; I worked extensively throughout the mobile site on several locations, most notably on the My Account page, PDP pages, and interactivity between pages."
 
     return (
-      <Card expanded={this.state.expanded} onExpandChange={this.handleExpandChange}>
+      <Card className="projectCard" expanded={this.state.expanded} onExpandChange={this.handleExpandChange}>
         <CardHeader
           title="Pandora Jewelry"
           titleStyle= {headerTextStyle}
@@ -70,7 +70,7 @@ class Pandora extends Component {
         <CardTitle title={titleText}  titleStyle={pictureTextStyle} expandable={true} />
         <CardText expandable={true} style={Color}>
           <div className="appLinkDiv">
-            <a target="_blank" className="appLink" href="https://us.pandora.net"> View Website </a>
+            <a target="_blank" className="appLink" href="https://us.pandora.net"> View </a>
           </div>
           <div className = "projectScreenshots">
             <a href="https://us.pandora.net/en/jewelry/charms/?src=categorySearch&position=top">

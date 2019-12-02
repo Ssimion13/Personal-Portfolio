@@ -45,7 +45,7 @@ class ScottToDo extends Component {
     const titleText = "A proof of concept for me to test using JSON Web Tokens with BCrypt for login and signup authentication, this app allows users to sign in and create their own private to-do lists, with three types of to-dos available for the user to use independently from each other. Uses Media queries for responsiveness for mobile devices."
 
     return (
-      <Card expanded={this.state.expanded} onExpandChange={this.handleExpandChange}>
+      <Card className="projectCard" expanded={this.state.expanded} onExpandChange={this.handleExpandChange}>
         <CardHeader
           title="Scott To-Do"
           titleStyle= {headerTextStyle}
@@ -68,7 +68,7 @@ class ScottToDo extends Component {
         <CardTitle title={titleText}  titleStyle={pictureTextStyle} expandable={true} />
         <CardText expandable={true} style={Color}>
           <div className="appLinkDiv">
-            <a target="_blank" className="appLink" href="https://scott-to-do.herokuapp.com/"> View Website</a>
+            <a target="_blank" className="appLink" href="https://scott-to-do.herokuapp.com/"> View </a>
           </div>
           <div className = "projectScreenshots">
             <img className="projectImages" alt = "frontpage" src={frontpage} />

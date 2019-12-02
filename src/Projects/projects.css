@@ -12,6 +12,10 @@
     background-color: whitesmoke
 }
 
+.projectCard {
+    width: 95%;
+}
+
 .projectHeader {
     display: flex;
     margin: 20px;
@@ -45,7 +49,6 @@
     width: 75%;
     height: 75%;
     margin: 15px;
-    border-radius: 5%;
 }
 
 .projects {
@@ -60,3 +63,13 @@
     width: 80% !important;
     padding-right: 0px;
 }
+
+
+
+@media(max-width: 600px) {
+    .newMobileProjectImages {
+        width: auto;
+        height: auto;
+        margin: none;
+    }
+  }

@@ -43,7 +43,7 @@ class TommyBahama extends Component {
     const titleText = "A project run with React/Redux on the Mobify Platform, with data being parsed through JQuery; I've worked throughout the site, but the largest live work was on the homepage and checkout."
 
     return (
-      <Card expanded={this.state.expanded} onExpandChange={this.handleExpandChange}>
+      <Card className="projectCard" expanded={this.state.expanded} onExpandChange={this.handleExpandChange}>
         <CardHeader
           title="Ann Summers"
           titleStyle= {headerTextStyle}
@@ -66,7 +66,7 @@ class TommyBahama extends Component {
         <CardTitle title={titleText}  titleStyle={pictureTextStyle} expandable={true} />
         <CardText expandable={true} style={Color}>
           <div className="appLinkDiv">
-            <a target="_blank" className="appLink" href="https://www.annsummers.com"> View Website </a>
+            <a target="_blank" className="appLink" href="https://www.annsummers.com"> View </a>
           </div>
           <div className="projectScreenshots">
             <a href="www.annsummers.com">

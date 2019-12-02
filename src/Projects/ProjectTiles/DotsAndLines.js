@@ -44,7 +44,7 @@ class DotsAndLines extends Component {
     const titleText = "Final group project while at V School. I worked exclusively on the front end on the game itself, using local storage and state to recreate the classic dots and lines game most commonly seen on kids menus at sit down restaurants."
 
     return (
-      <Card expanded={this.state.expanded} onExpandChange={this.handleExpandChange}>
+      <Card className="projectCard" expanded={this.state.expanded} onExpandChange={this.handleExpandChange}>
         <CardHeader
           title="Dots And Lines"
           titleStyle= {headerTextStyle}
@@ -67,7 +67,7 @@ class DotsAndLines extends Component {
         <CardTitle title={titleText}  titleStyle={pictureTextStyle} expandable={true} />
         <CardText expandable={true} style={Color}>
           <div className="appLinkDiv">
-            <a target="_blank" className="appLink" href="https://dots-and-lines.herokuapp.com/"> View Website</a>
+            <a target="_blank" className="appLink" href="https://dots-and-lines.herokuapp.com/"> View </a>
           </div>
           <div className = "projectScreenshots">
             <a href="https://dots-and-lines.herokuapp.com/" className="flex align-center justify-center">

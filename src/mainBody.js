@@ -65,7 +65,10 @@ class mainBody extends React.Component {
     } else {
       this.setState({
         currentSection: section
-      }, () => window.scrollTo(0, 850))
+      }, () => window.scrollTo({
+        top: 850,
+        behavior: 'smooth',
+      }))
     }
   }
 
@@ -75,9 +78,14 @@ class mainBody extends React.Component {
         <div className = "body">
           {/* <Title title="Scott Simion" image="http://igazabolszerelem.hu/images/images/959762414548d2b39f33ef.jpg" color="white"/> */}
           <div className="mainBodyDiv">
-            <video className="width-full frontVideo" src={PortfolioOpening} autoPlay muted loop>
+            {/* <video className="width-full frontVideo" src={PortfolioOpening} autoPlay muted loop>
               Your browser does not support the video tag.
-            </video>
+            </video> */}
+            <div className="width-full frontText">
+              <h1 className={` ${this.state.time > 1000 ? 'fade-in' : 'fade-out'} text-align-center margin-top-medium`} > Hi. I'm Scott. </h1>
+              <h1 className={` ${this.state.time > 2500 ? 'fade-in' : 'fade-out'} text-align-center margin-top-medium`} > I'm a Web Developer. </h1>
+              <h1 className={` ${this.state.time > 4000 ? 'fade-in' : 'fade-out'} text-align-center margin-top-medium`} > Let's build some websites. </h1>
+            </div>
           </div>
           <div className="thumbnailDiv">
             <div className="thumbnailHolder">
