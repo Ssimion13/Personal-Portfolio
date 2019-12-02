@@ -54,7 +54,7 @@ a {
 
 
 .frontVideo {
-  height: 55vh;
+  height: 60vh;
   background-color: #000;
 }
 
@@ -168,7 +168,6 @@ a {
 }
 
 .footerLinks {
-  height: 60px;
 }
 
 /* end Footer Items */
@@ -207,7 +206,7 @@ a {
   transition: all 400ms;
 }
 .personalInformation {
-  background-color: whitesmoke;
+  background-color: linear-gradient(-45deg, hsl(196, 40%, 91%),hsl(196, 21%, 97%));
   display: flex;
   border-radius: 10px;
   grid-area: picture;
@@ -226,8 +225,7 @@ a {
   padding: 10px;
 }
 .thumbnailHolder {
-
-  background-color: whitesmoke;
+  background-color: linear-gradient(-45deg, hsl(196, 40%, 91%),hsl(196, 21%, 97%));
   margin-top: 20px;
   border-radius: 10px;
   display: flex;
@@ -250,7 +248,7 @@ a {
 }
 
 .thumbnail:hover  {
-  transition-duration: 0.3s;
+  transition: all 0.7s;
   background-color: #FFFFFF;
   color: #000;
   text-decoration: none;

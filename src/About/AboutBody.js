@@ -34,7 +34,7 @@ function AboutBody (){
       <h1> Choosing Development </h1>
       <p> I chose web/software development as my career because I genuinely enjoy the logic and problem solving that comes with the field. 
         There's always a new problem to be solved, a new technology to learn, a new framework... and there's always a time limit. To be honest, I kind of enjoy the race; I worked in medicine
-        and while it wasn't for me, I found the tight deadlines that can come in development as well to almost be exhilarating-- how can we solve the problem, meet the sprint as efficiently as possible?
+        and while it wasn't for me, I found the tight deadlines that can come in development as well to almost be exhilarating-- how can we solve the problem, finish the sprint as efficiently as possible?
         It might not be the most fun question at the moment, but I find it to be really enjoyable, especially when the project is done and I can look back.
       </p>
     </div>
