@@ -1,5 +1,4 @@
 import React from "react";
-import {Link} from "react-router-dom"
 import Resume from "./Resume.docx"
 import currentResume from "./resume-1.jpg";
 

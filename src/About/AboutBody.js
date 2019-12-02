@@ -8,7 +8,6 @@ function AboutBody (){
         <div className="infoDivider">
           <img alt="me" className="portrait" src={ScottSuit} />
           <div className="contactInfo">
-            <h3> Contact Me! </h3>
             <h4> Email: ScottSimion@gmail.com </h4>
             <h5> Telephone: (561) 632-9726 </h5>
           </div>

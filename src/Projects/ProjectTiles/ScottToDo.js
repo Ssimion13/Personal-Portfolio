@@ -49,7 +49,7 @@ class ScottToDo extends Component {
         <CardHeader
           title="Scott To-Do"
           titleStyle= {headerTextStyle}
-          subtitle="MERN Responsive Project with JWT Authentication and React-BootStrap"
+          subtitle="MERN Responsive Personal Project with JWT Authentication and React-BootStrap"
           avatar={frontpage}
           actAsExpander={true}
           showExpandableButton={true}
@@ -67,8 +67,9 @@ class ScottToDo extends Component {
 
         <CardTitle title={titleText}  titleStyle={pictureTextStyle} expandable={true} />
         <CardText expandable={true} style={Color}>
-          <div className="appLinkDiv">
-            <a target="_blank" className="appLink" href="https://scott-to-do.herokuapp.com/"> View </a>
+          <div className="appLinkDiv flex align-center justify-between">
+            <a target="_blank" className="appLink" href="http://lvendoscopy.s3-website-us-east-1.amazonaws.com/"> View </a>
+            <a target="_blank" className="appLink" href="https://github.com/Ssimion13/ScottToDo"> View Github </a>
           </div>
           <div className = "projectScreenshots">
             <img className="projectImages" alt = "frontpage" src={frontpage} />

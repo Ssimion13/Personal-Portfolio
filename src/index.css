@@ -1,6 +1,5 @@
 * {
   box-sizing: border-box;
-  font-family: "Roboto";
 }
 a {
   text-decoration: none;
@@ -8,6 +7,7 @@ a {
 
 #root {
   position: relative;
+  min-height: 100%;
 }
 
 
@@ -46,6 +46,10 @@ a {
   width: 100%;
 }
 
+.width-80 {
+  width: 80%;
+}
+
 .display-none {
   display: none;
 }
@@ -62,11 +66,15 @@ a {
   font-weight: bold;
 }
 
+.text-title {
+  font-size: 3.5rem;
+}
+
 /* global */
 
 
 .frontText {
-  height: 60vh;
+  height: 55vh;
   background: linear-gradient(#000000, #222222);
   color: #fff;
   display: flex;
@@ -176,11 +184,18 @@ a {
   display: flex;
   justify-content: space-around; 
   width: 100%;
-  padding-left: 20px;
-  padding-right: 20px;
+  height: 80px;
 }
 
 .footerLinks {
+  display: flex;
+  background-color: #F8F8FF;
+  border-radius: 20px;
+  width: 33%;
+  align-items: center;
+  padding-left: 30px;
+  padding-right: 30px;
+  justify-content: space-between;
 }
 
 /* end Footer Items */
@@ -230,7 +245,6 @@ a {
   flex-direction: column;
 }
 .contactInfo {
-  border: 1px solid black;
   margin-top: 20px;
   margin-bottom: 10px;
   font-size: 25px;
@@ -240,6 +254,7 @@ a {
 .thumbnailHolder {
   background-color: linear-gradient(-45deg, hsl(196, 40%, 91%),hsl(196, 21%, 97%));
   margin-top: 20px;
+  margin-bottom: 20px;
   border-radius: 10px;
   display: flex;
   justify-content: space-around;
@@ -262,7 +277,7 @@ a {
 
 .thumbnail:hover  {
   transition: all 0.7s;
-  background-color: #efefef;
+  background-color: #F8F8FF;
   color: #222222;
   text-decoration: none;
   border-radius: 20px;
@@ -284,13 +299,13 @@ a {
 
 .sideBodies {
   width: 95%;
-  background-color: #fafafa;
+  background-color: #F8F8FF;
   margin-left: auto;
   margin-right: auto;
 }
 
 .aboutBodies {
-  background-color: #fafafa;
+  background-color: #F8F8FF;
   display: flex;
 
 }
@@ -342,6 +357,7 @@ img {
 .appLink:hover {
   color: #222222;
   text-decoration: none;
+  transition: all 0.7s;
 }
 
 .resumeDownloadButton {
@@ -405,6 +421,8 @@ img {
   }
   .aboutBodies {
     display: block;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
   .thumbnail {
     border-bottom: 1px solid black;

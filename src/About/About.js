@@ -1,17 +1,8 @@
 import React from "react";
-import Title from "../Title";
 import AboutBody from "./AboutBody"
 
 
 class About extends React.Component {
-  constructor() {
-    super()
-  }
-
-  componentDidMount() {
-    window.scrollTo(0,0)
-  }
-
   render() {
     return (
       <div className="body">

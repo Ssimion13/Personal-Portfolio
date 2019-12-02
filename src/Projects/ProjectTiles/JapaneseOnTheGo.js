@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
-import {Card, CardActions, CardHeader, CardTitle, CardText} from 'material-ui/Card';
-import FlatButton from 'material-ui/FlatButton';
-import Toggle from 'material-ui/Toggle';
+import {Card, CardHeader, CardTitle, CardText} from 'material-ui/Card';
+
 import JapaneseOnTheGo1 from '../projectImages/japaneseonthego/JapaneseOnTheGo1.PNG'
 import JapaneseOnTheGo2 from '../projectImages/japaneseonthego/JapaneseOnTheGo2.PNG'
 
@@ -48,7 +47,7 @@ class JapaneseOnTheGo extends Component {
         <CardHeader
           title="Japanese On The Go"
           titleStyle= {headerTextStyle}
-          subtitle="React Front End Project"
+          subtitle="React Front End Personal Project"
           avatar={JapaneseOnTheGo1}
           actAsExpander={true}
           showExpandableButton={true}
@@ -66,8 +65,9 @@ class JapaneseOnTheGo extends Component {
 
         <CardTitle title={titleText}  titleStyle={pictureTextStyle} expandable={true} />
         <CardText expandable={true} style={Color}>
-          <div className = "appLinkDiv">
-            <a target="_blank" className="appLink" href="http://thriftstoreblackjack.surge.sh/"> View </a>
+          <div className="appLinkDiv flex align-center justify-between">
+            <a target="_blank" rel="noopener noreferrer" className="appLink" href="http://lvendoscopy.s3-website-us-east-1.amazonaws.com/"> View </a>
+            <a target="_blank" rel="noopener noreferrer" className="appLink" href="https://github.com/Ssimion13/JapaneseHiraKataPractice"> View Github </a>
           </div>
           <div className = "projectScreenshots">
             <a href="https://japaneseonthego.com/HiraganaTest">

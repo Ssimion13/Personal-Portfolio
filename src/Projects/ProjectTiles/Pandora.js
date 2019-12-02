@@ -1,7 +1,5 @@
 import React, {Component} from 'react';
-import {Card, CardActions, CardHeader, CardTitle, CardText} from 'material-ui/Card';
-import FlatButton from 'material-ui/FlatButton';
-import Toggle from 'material-ui/Toggle';
+import {Card, CardHeader, CardTitle, CardText} from 'material-ui/Card';
 import pandoraGiftCard from "../projectImages/pandora/pandoraGiftCard.PNG"
 import pandoraGiftCard2 from "../projectImages/pandora/pandoraGiftCard2.PNG"
 import pandoraMiniHeart from "../projectImages/pandora/pandoraMiniHeart.PNG"
@@ -70,7 +68,7 @@ class Pandora extends Component {
         <CardTitle title={titleText}  titleStyle={pictureTextStyle} expandable={true} />
         <CardText expandable={true} style={Color}>
           <div className="appLinkDiv">
-            <a target="_blank" className="appLink" href="https://us.pandora.net"> View </a>
+            <a target="_blank"  rel="noopener noreferrer" className="appLink" href="https://us.pandora.net"> View </a>
           </div>
           <div className = "projectScreenshots">
             <a href="https://us.pandora.net/en/jewelry/charms/?src=categorySearch&position=top">
@@ -80,10 +78,10 @@ class Pandora extends Component {
               <img className="newMobileProjectImages" alt="Pandora Size Guide" src={pandoraSizeGuide} />
             </a>
             <a href="https://us.pandora.net/en/gifts/featured-gifting/gift-cards/pandora-e-gift-card/EGC.html#searchmethod=suggestedprd&searchterm=e%20gift%20card&firstview=false">
-              <img className="newMobileProjectImages" alt="Pandora Gift Card Image" src={pandoraGiftCard} />
+              <img className="newMobileProjectImages" alt="Pandora Gift Card" src={pandoraGiftCard} />
             </a>
             <a href="https://us.pandora.net/en/gifts/featured-gifting/gift-cards/pandora-e-gift-card/EGC.html#searchmethod=suggestedprd&searchterm=e%20gift%20card&firstview=false">
-              <img className="newMobileProjectImages" alt="Pandora Gift Card Image 2" src={pandoraGiftCard2} />
+              <img className="newMobileProjectImages" alt="Pandora Gift Card 2" src={pandoraGiftCard2} />
             </a>
           </div>
         </CardText>

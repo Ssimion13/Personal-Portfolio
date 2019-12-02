@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Card, CardActions, CardHeader, CardTitle, CardText} from 'material-ui/Card';
+import {Card, CardHeader, CardTitle, CardText} from 'material-ui/Card';
 import LoseSS from "../projectImages/blackjack/LoseSS.png";
 import WinSS from "../projectImages/blackjack/WinSS.png";
 import BustedSS from "../projectImages/blackjack/BustedSS.png";
@@ -68,7 +68,7 @@ class BlackJack extends Component {
         <CardTitle title={titleText}  titleStyle={pictureTextStyle} expandable={true} />
         <CardText expandable={true} style={Color}>
           <div className = "appLinkDiv">
-            <a target="_blank" className="appLink" href="http://thriftstoreblackjack.surge.sh/"> View </a>
+            <a target="_blank"  rel="noopener noreferrer" className="appLink" href="http://thriftstoreblackjack.surge.sh/"> View </a>
           </div>
           <div className = "projectScreenshots">
             <img className="projectImages" alt = "blackjackpicture" src={WholeBlackjackSS} / >

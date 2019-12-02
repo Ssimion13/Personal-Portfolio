@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Card, CardActions, CardHeader, CardTitle, CardText} from 'material-ui/Card';
+import {Card, CardHeader, CardTitle, CardText} from 'material-ui/Card';
 
 import pubgAssistant1 from "../projectImages/PUBG/PUBGAssistant1.PNG"
 import pubgAssistant2 from "../projectImages/PUBG/PUBGAssistant2.PNG"
@@ -47,7 +47,7 @@ class PUBGAssistant extends Component {
         <CardHeader
           title="PUBG Assistant"
           titleStyle= {headerTextStyle}
-          subtitle="React Full Stack Project w/ API use"
+          subtitle="React Full Stack Personal Project w/ API use"
           avatar={pubgAssistant1}
           actAsExpander={true}
           showExpandableButton={true}
@@ -60,13 +60,14 @@ class PUBGAssistant extends Component {
             onToggle={this.handleToggle}
             labelPosition="right"
             label="Toggle"
-          />
+          />qqqqq
         </CardText> */}
 
         <CardTitle title={titleText}  titleStyle={pictureTextStyle} expandable={true} />
         <CardText expandable={true} style={Color}>
-          <div className="appLinkDiv">
-            <a target="_blank" className="appLink" href="https://pubgassistant.herokuapp.com"> View </a>
+        <div className="appLinkDiv flex align-center justify-between">
+            <a target="_blank"  rel="noopener noreferrer" className="appLink" href="http://lvendoscopy.s3-website-us-east-1.amazonaws.com/"> View </a>
+            <a target="_blank"  rel="noopener noreferrer" className="appLink" href="https://github.com/Ssimion13/pubg_drop_generator"> View Github </a>
           </div>
           <div className="projectScreenshots">
             <a href="https://pubgassistant.herokuapp.com/DropGenerator">

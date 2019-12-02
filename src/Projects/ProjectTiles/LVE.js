@@ -1,11 +1,8 @@
 import React, {Component} from 'react';
-import {Card, CardActions, CardHeader, CardTitle, CardText} from 'material-ui/Card';
-import FlatButton from 'material-ui/FlatButton';
-import Toggle from 'material-ui/Toggle';
-import pandoraGiftCard from "../projectImages/pandora/pandoraGiftCard.PNG"
-import pandoraGiftCard2 from "../projectImages/pandora/pandoraGiftCard2.PNG"
-import pandoraMiniHeart from "../projectImages/pandora/pandoraMiniHeart.PNG"
-import pandoraSizeGuide from "../projectImages/pandora/pandoraSizeGuide.PNG"
+import {Card, CardHeader, CardTitle, CardText} from 'material-ui/Card';
+import LVE1 from '../projectImages/lve/LVE1.PNG'
+import LVE2 from '../projectImages/lve/LVE2.PNG'
+import LVE3 from '../projectImages/lve/LVE3.PNG'
 
 
 
@@ -37,22 +34,23 @@ class LVE extends Component {
   render() {
 
     const headerTextStyle = {
-      fontSize: "30px"
+      fontSize: "30px",
+      textAlign: 'center'
     }
     const pictureTextStyle = {
       fontSize: "25px",
       textAlign: "center"
     }
     const Color = { backgroundColor: "whitesmoke"}
-    const titleText = "A project run with React/Redux on the Mobify Platform, with data being parsed through JQuery; I worked extensively throughout the mobile site on several locations, most notably on the My Account page, PDP pages, and interactivity between pages."
+    const titleText = "A freelance project with my former employer, a react-bootstrap styled React.js website created to the Doctor's standards."
 
     return (
       <Card className="projectCard" expanded={this.state.expanded} onExpandChange={this.handleExpandChange}>
         <CardHeader
-          title="Pandora Jewelry"
+          title="Las Vegas Endoscopy"
           titleStyle= {headerTextStyle}
-          subtitle="Mobile Site Production For US, UK, and DE Pandora"
-          avatar={pandoraMiniHeart}
+          subtitle="Freelance Website for Surgical Center"
+          avatar={LVE1}
           actAsExpander={true}
           showExpandableButton={true}
           raised={true}
@@ -69,22 +67,19 @@ class LVE extends Component {
 
         <CardTitle title={titleText}  titleStyle={pictureTextStyle} expandable={true} />
         <CardText expandable={true} style={Color}>
-          <div className="appLinkDiv">
-            <a target="_blank" className="appLink" href="http://lvendoscopy.s3-website-us-east-1.amazonaws.com/"> View </a>
-            <a target="_blank" href="https://github.com/Ssimion13/lvewebsite"> View Github </a>
+          <div className="appLinkDiv flex align-center justify-between">
+            <a target="_blank" rel="noopener noreferrer" className="appLink" href="http://lvendoscopy.s3-website-us-east-1.amazonaws.com/"> View </a>
+            <a target="_blank" rel="noopener noreferrer" className="appLink" href="https://github.com/Ssimion13/lvewebsite"> View Github </a>
           </div>
           <div className = "projectScreenshots">
-            <a href="https://us.pandora.net/en/jewelry/charms/?src=categorySearch&position=top">
-              <img className="newMobileProjectImages" alt="Pandora Mini Heart" src={pandoraMiniHeart} />
+            <a href="http://lvendoscopy.s3-website-us-east-1.amazonaws.com/">
+              <img className="newMobileProjectImages" alt="LVE Website" src={LVE1} />
             </a>
-            <a>
-              <img className="newMobileProjectImages" alt="Pandora Size Guide" src={pandoraSizeGuide} />
+            <a href="http://lvendoscopy.s3-website-us-east-1.amazonaws.com/">
+              <img className="newMobileProjectImages" alt="LVE Website" src={LVE2} />
             </a>
-            <a href="https://us.pandora.net/en/gifts/featured-gifting/gift-cards/pandora-e-gift-card/EGC.html#searchmethod=suggestedprd&searchterm=e%20gift%20card&firstview=false">
-              <img className="newMobileProjectImages" alt="Pandora Gift Card Image" src={pandoraGiftCard} />
-            </a>
-            <a href="https://us.pandora.net/en/gifts/featured-gifting/gift-cards/pandora-e-gift-card/EGC.html#searchmethod=suggestedprd&searchterm=e%20gift%20card&firstview=false">
-              <img className="newMobileProjectImages" alt="Pandora Gift Card Image 2" src={pandoraGiftCard2} />
+            <a href="http://lvendoscopy.s3-website-us-east-1.amazonaws.com/">
+              <img className="newMobileProjectImages" alt="LVE Website" src={LVE3} />
             </a>
           </div>
         </CardText>

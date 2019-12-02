@@ -70,13 +70,13 @@ class AnnSummers extends Component {
         <CardTitle title={titleText}  titleStyle={pictureTextStyle} expandable={true} />
         <CardText expandable={true} style={Color}>
           <div className="appLinkDiv">
-            <a target="_blank" className="appLink" href="https://www.annsummers.com"> View </a>
+            <a target="_blank" rel="noopener noreferrer" className="appLink" href="https://www.annsummers.com"> View </a>
           </div>
           <div className="projectScreenshots">
             <a href="www.annsummers.com">
               <img className="newMobileProjectImages" alt="Ann Summers Home" src={annsummersHome} />
             </a>
-            <a target="_blank" href="https://www.annsummers.com">
+            <a target="_blank" rel="noopener noreferrer" href="https://www.annsummers.com">
               <img className="newMobileProjectImages" alt="Ann Summers Home 2" src={annsummersHome2} />
             </a>
             <a>

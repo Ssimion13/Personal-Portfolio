@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Card, CardActions, CardHeader, CardTitle, CardText} from 'material-ui/Card';
+import {Card, CardHeader, CardTitle, CardText} from 'material-ui/Card';
 import FrontPageDots from "../projectImages/dotsandlines/frontpagedots.png";
 import MainGameDots from "../projectImages/dotsandlines/maingamedots.png";
 import GameEndDot from "../projectImages/dotsandlines/gameenddot.png";
@@ -66,8 +66,9 @@ class DotsAndLines extends Component {
 
         <CardTitle title={titleText}  titleStyle={pictureTextStyle} expandable={true} />
         <CardText expandable={true} style={Color}>
-          <div className="appLinkDiv">
-            <a target="_blank" className="appLink" href="https://dots-and-lines.herokuapp.com/"> View </a>
+          <div className="appLinkDiv flex align-center justify-between">
+            <a target="_blank"  rel="noopener noreferrer" className="appLink" href="http://lvendoscopy.s3-website-us-east-1.amazonaws.com/"> View </a>
+            <a target="_blank"  rel="noopener noreferrer" className="appLink" href="https://github.com/Ssimion13/dots_and_lines"> View Github </a>
           </div>
           <div className = "projectScreenshots">
             <a href="https://dots-and-lines.herokuapp.com/" className="flex align-center justify-center">
