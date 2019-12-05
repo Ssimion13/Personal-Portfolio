@@ -1,7 +1,7 @@
 import React from "react";
 import ProjectBody from "./ProjectBody"
 import './projects.css'
-import { Modal } from '@material-ui/core';
+
 
 class Projects extends React.Component {
   render() {

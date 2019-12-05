@@ -1,7 +1,10 @@
 import React, {Component} from 'react';
-import {Card, CardActions, CardHeader, CardTitle, CardText} from 'material-ui/Card';
-import FlatButton from 'material-ui/FlatButton';
-import Toggle from 'material-ui/Toggle';
+import {Card, CardHeader, CardTitle, CardText} from 'material-ui/Card';
+import tbOrder from '../projectImages/tommybahama/tborder.PNG'
+import tbOrder2 from '../projectImages/tommybahama/tborder2.PNG'
+import tbOrder3 from '../projectImages/tommybahama/tborder3.PNG'
+import tbOrder4 from '../projectImages/tommybahama/tborder4.PNG'
+import tbRestaurant from '../projectImages/tommybahama/tbrestaurant.PNG'
 
 
 
@@ -40,52 +43,41 @@ class TommyBahama extends Component {
       textAlign: "center"
     }
     const Color = { backgroundColor: "whitesmoke"}
-    const titleText = "A project run with React/Redux on the Mobify Platform, with data being parsed through JQuery; I've worked throughout the site, but the largest live work was on the homepage and checkout."
+    const titleText = "A project run with React/Redux on the Mobify Platform. Jquery was used to parse some pages/data, and RESTful APIs were used for building the mobile restaurant pages. Worked on mobile version of restaurant and order tracking."
 
     return (
       <Card className="projectCard" expanded={this.state.expanded} onExpandChange={this.handleExpandChange}>
         <CardHeader
-          title="Ann Summers"
+          title="Tommy Bahama"
           titleStyle= {headerTextStyle}
-          subtitle="Mobile Site Production for Tommy Bahama"
-          avatar={annsummersHome}
+          subtitle="Project with 64labs: Mobile Site Production for Tommy Bahama"
+          avatar={tbRestaurant}
           actAsExpander={true}
           showExpandableButton={true}
           raised={true}
           className="projectCard"
         />
-        {/* <CardText>
-          <Toggle
-            toggled={this.state.expanded}
-            onToggle={this.handleToggle}
-            labelPosition="right"
-            label="Toggle"
-          />
-        </CardText> */}
 
         <CardTitle title={titleText}  titleStyle={pictureTextStyle} expandable={true} />
         <CardText expandable={true} style={Color}>
           <div className="appLinkDiv">
-            <a target="_blank" className="appLink" href="https://www.annsummers.com"> View </a>
+            <a target="_blank" rel="noopener noreferrer" className="appLink" href="https://tommybahama.com"> View </a>
           </div>
           <div className="projectScreenshots">
-            <a href="www.annsummers.com">
-              <img className="newMobileProjectImages" alt="Ann Summers Home" src={annsummersHome} />
+            <a target="_blank" rel="noopener noreferrer" href="https://www.tommybahama.com/en/store-finder?q=&searchStores=true&searchRestaurants=true">
+              <img className="newMobileProjectImages" alt="Tommy Bahama Home" src={tbRestaurant} />
             </a>
-            <a target="_blank" href="https://www.annsummers.com">
-              <img className="newMobileProjectImages" alt="Ann Summers Home 2" src={annsummersHome2} />
+            <a target="_blank" rel="noopener noreferrer" href="https://www.tommybahama.com/en/orderTrackingLanding">
+              <img className="newMobileProjectImages" alt="Tommy Bahama Order" src={tbOrder} />
             </a>
-            <a>
-              <img className="newMobileProjectImages" alt="Ann Summers Click and Collect" src={annsummersCAndC} />
+            <a target="_blank" rel="noopener noreferrer" href="https://www.tommybahama.com/en/orderTrackingLanding">
+              <img className="newMobileProjectImages" alt="Tommy Bahama Order 2" src={tbOrder2} />
             </a>
-            <a>
-              <img className="newMobileProjectImages" alt="Ann Summers Click and Collect 2" src={annsummersCAndC2} />
+            <a target="_blank" rel="noopener noreferrer" href="https://www.tommybahama.com/en/orderTrackingLanding">
+              <img className="newMobileProjectImages" alt="Tommy Bahama Order 3" src={tbOrder3} />
             </a>
-            <a>
-              <img className="newMobileProjectImages" alt="Ann Summers Checkout" src={annsummersCheckout} />
-            </a>
-            <a>
-              <img className="newMobileProjectImages" alt="Ann Summers Checkout 2" src={annsummersCheckout2} />
+            <a target="_blank" rel="noopener noreferrer" href="https://www.tommybahama.com/en/orderTrackingLanding">
+              <img className="newMobileProjectImages" alt="Tommy Bahama Order 4" src={tbOrder4} />
             </a>
           </div>
         </CardText>
