@@ -44,6 +44,7 @@ class mainBody extends React.Component {
 
   setSection(section) {
     const {currentSection} = this.state
+    const mobileHeight = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ? 1200 : 850;
 
     if(currentSection === section) {
       this.setState({
@@ -54,7 +55,7 @@ class mainBody extends React.Component {
       this.setState({
         currentSection: section
       }, () => window.scrollTo({
-        top: 850,
+        top: mobileHeight,
         behavior: 'smooth',
       }))
     }

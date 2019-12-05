@@ -21,6 +21,11 @@ function ProjectBody (){
           <DotsAndLines />
           <BlackJack />
         </div>
+
+        <div className="flex align-center justify-center">
+          <div onClick={this.returnToTop}> To Top </div>
+        </div>
+
       </div>
   )
 }

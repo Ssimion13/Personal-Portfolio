@@ -33,7 +33,7 @@ class PUBGAssistant extends Component {
   render() {
 
     const headerTextStyle = {
-      fontSize: "30px"
+      fontSize: "28px"
     }
     const pictureTextStyle = {
       fontSize: "25px",

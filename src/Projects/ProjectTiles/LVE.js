@@ -34,7 +34,7 @@ class LVE extends Component {
   render() {
 
     const headerTextStyle = {
-      fontSize: "30px",
+      fontSize: "25px",
       textAlign: 'center'
     }
     const pictureTextStyle = {

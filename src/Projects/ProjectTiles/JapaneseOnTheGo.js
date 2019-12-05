@@ -33,7 +33,7 @@ class JapaneseOnTheGo extends Component {
   render() {
 
     const headerTextStyle = {
-      fontSize: "30px"
+      fontSize: "25px"
     }
     const pictureTextStyle = {
       fontSize: "25px",

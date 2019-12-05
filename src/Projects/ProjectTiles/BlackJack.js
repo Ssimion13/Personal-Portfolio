@@ -35,7 +35,7 @@ class BlackJack extends Component {
   render() {
 
     const headerTextStyle = {
-      fontSize: "30px"
+      fontSize: "28px"
     }
     const pictureTextStyle = {
       fontSize: "25px",
@@ -49,7 +49,7 @@ class BlackJack extends Component {
         <CardHeader
           title="Blackjack"
           titleStyle= {headerTextStyle}
-          subtitle="React Full Stack Project w/ API use"
+          subtitle="Bootcamp Project: React Full Stack Project w/ API use"
           avatar={WholeBlackjackSS}
           actAsExpander={true}
           showExpandableButton={true}

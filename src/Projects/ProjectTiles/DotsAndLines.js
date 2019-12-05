@@ -34,7 +34,7 @@ class DotsAndLines extends Component {
   render() {
 
     const headerTextStyle = {
-      fontSize: "30px"
+      fontSize: "28px"
     }
     const pictureTextStyle = {
       fontSize: "25px",
@@ -48,7 +48,7 @@ class DotsAndLines extends Component {
         <CardHeader
           title="Dots And Lines"
           titleStyle= {headerTextStyle}
-          subtitle="React Full Stack Group Project, Worked on Front End"
+          subtitle="Bootcamp Project: React Full Stack Group Project"
           avatar={MainGameDots}
           actAsExpander={true}
           showExpandableButton={true}

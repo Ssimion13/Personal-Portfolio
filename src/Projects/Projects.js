@@ -4,6 +4,19 @@ import './projects.css'
 
 
 class Projects extends React.Component {
+  constructor(){
+    super()
+
+    this.returnToTop = this.returnToTop.bind(this)
+  }
+
+  returnToTop() {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    })
+  }
+
   render() {
     return (
       <div className="projects">
