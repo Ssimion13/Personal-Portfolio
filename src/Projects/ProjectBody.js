@@ -8,26 +8,34 @@ import BlackJack from "./ProjectTiles/BlackJack";
 import LVE from "./ProjectTiles/LVE"
 import TommyBahama from './ProjectTiles/TommyBahama';
 
-function ProjectBody (){
-  return (
-    <div className="projectDiv">
-        <div className="projects flex align-center justify-center direction-column">
-          <Pandora />
-          <AnnSummers />
-          <TommyBahama />
-          <LVE />
-          <JapaneseOnTheGo />
-          <PUBGAssistant />
-          <DotsAndLines />
-          <BlackJack />
-        </div>
+class ProjectBody extends React.Component {
+  constructor(){
+    super()
 
-        <div className="flex align-center justify-center">
-          <div onClick={this.returnToTop}> To Top </div>
-        </div>
+    this.returnToTop = this.returnToTop.bind(this)
+  }
 
-      </div>
-  )
+  render() {
+    return (
+      <div className="projectDiv">
+          <div className="projects flex align-center justify-center direction-column">
+            <Pandora />
+            <AnnSummers />
+            <TommyBahama />
+            <LVE />
+            <JapaneseOnTheGo />
+            <PUBGAssistant />
+            <DotsAndLines />
+            <BlackJack />
+          </div>
+
+          <div className="flex align-center justify-center">
+            <div onClick={this.returnToTop}> To Top </div>
+          </div>
+
+        </div>
+    )
+  }
 }
 
 export default ProjectBody;
