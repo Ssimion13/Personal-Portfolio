@@ -11,8 +11,14 @@ import TommyBahama from './ProjectTiles/TommyBahama';
 class ProjectBody extends React.Component {
   constructor(){
     super()
-
     this.returnToTop = this.returnToTop.bind(this)
+  }
+
+  returnToTop() {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    })
   }
 
   render() {
