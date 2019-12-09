@@ -1,6 +1,6 @@
 import React from "react";
 import Resume from "./Resume.docx"
-import currentResume from "./resume-1.jpg";
+import currentResume from "./Resume-1.jpg";
 
 function ResumeBody (){
   return (

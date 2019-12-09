@@ -29,11 +29,14 @@ class AboutBody extends React.Component {
       </div>
       <div>
         <div className="aboutProfile">
-          <h1 className="bold"> Why Development? </h1>
-          <p> I originally found my passion for computer science while I was in undergraduate pre-med at the University of Missouri:
-            all of my friends later in college were CS major students who convinced me to try coding with my electives, so I did! 
-            I found their work to be fascinating and the elective classes invigorating, but my school wouldn't let me switch majors so far along in my program. 
-            After I graduated, I picked up coding again and I knew that this is what I wanted to do with my career. </p>
+          <h1 className="bold"> Why Web Development? </h1>
+            <p>
+              It might be a bit cliche to say, but the idea that through these frameworks and languages we use to create software and apps we can 
+              create things that people around the world use every day is, honestly, truly awe inspiring to me. 
+              There's something distinctly satisfying about creating something, then looking back at it and saying "I built that!"; with development, you get that kind of satisfaction every day.
+              Sure, it can be hard and having to learn new things everyday can be a daunting task at times, but the prize of knowing the work you do is seen and used every day?
+              That's really hard to beat. I love it.
+            </p>
         </div>
         <div className="aboutBackground">
           <h1 className="bold"> Values At Work? </h1>
@@ -54,9 +57,11 @@ class AboutBody extends React.Component {
         </div>
       </div>
 
-        <div className="flex align-center justify-center">
-          <div onClick={this.returnToTop}> To Top </div>
-        </div>
+        {/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) &&
+          <div className="flex align-center justify-center">
+            <div onClick={this.returnToTop}> To Top </div>
+          </div>
+        }
       </div>
     )
   }

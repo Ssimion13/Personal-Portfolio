@@ -106,7 +106,7 @@ class mainBody extends React.Component {
           {currentSection === 'projectSection' &&
             <Projects />
           }
-                    {currentSection === 'resumeSection' &&
+          {currentSection === 'resumeSection' &&
             <Resume />
           }
         </div>

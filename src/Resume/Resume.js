@@ -23,9 +23,11 @@ class Resume extends React.Component {
       <div className="body">
       {/* <Title image={ResumePicture} position="top center" height="400px" /> */}
       <ResumeBody />
-      <div className="flex align-center justify-center">
-          <div onClick={this.returnToTop}> To Top </div>
-      </div>
+        {/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) &&
+          <div className="flex align-center justify-center">
+            <div onClick={this.returnToTop}> To Top </div>
+          </div>
+        }
       </div>
     )
   }
