@@ -44,7 +44,7 @@ class mainBody extends React.Component {
 
   setSection(section) {
     const {currentSection} = this.state
-    const mobileHeight = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ? 1200 : 850;
+    const mobileHeight = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ? 700 : 750;
 
     if(currentSection === section) {
       this.setState({
