@@ -1,15 +1,13 @@
 import React, {Component} from 'react';
-import {Card, CardActions, CardHeader, CardTitle, CardText} from 'material-ui/Card';
-import FlatButton from 'material-ui/FlatButton';
-import Toggle from 'material-ui/Toggle';
-import LoseSS from "./projectImages/LoseSS.png";
-import WinSS from "./projectImages/WinSS.png";
-import BustedSS from "./projectImages/BustedSS.png";
-import WholeBlackjackSS from "./projectImages/WholeBlackjackSS.png";
+import {Card, CardHeader, CardTitle, CardText} from 'material-ui/Card';
+import LoseSS from "../projectImages/blackjack/LoseSS.png";
+import WinSS from "../projectImages/blackjack/WinSS.png";
+import BustedSS from "../projectImages/blackjack/BustedSS.png";
+import WholeBlackjackSS from "../projectImages/blackjack/WholeBlackjackSS.png";
 
 
 
-class ProjectTwo extends Component {
+class BlackJack extends Component {
 
   constructor(props) {
     super(props);
@@ -37,7 +35,7 @@ class ProjectTwo extends Component {
   render() {
 
     const headerTextStyle = {
-      fontSize: "30px"
+      fontSize: "28px"
     }
     const pictureTextStyle = {
       fontSize: "25px",
@@ -47,28 +45,30 @@ class ProjectTwo extends Component {
     const titleText = "This full stack project used the card API to make a rudimentary blackjack simulator that compares your cards to a computer's random result."
 
     return (
-      <Card expanded={this.state.expanded} onExpandChange={this.handleExpandChange}>
+      <Card className="projectCard" expanded={this.state.expanded} onExpandChange={this.handleExpandChange}>
         <CardHeader
           title="Blackjack"
           titleStyle= {headerTextStyle}
-          subtitle="React Full Stack Project w/ API use"
+          subtitle="Bootcamp Project: React Full Stack Project w/ API use"
           avatar={WholeBlackjackSS}
           actAsExpander={true}
           showExpandableButton={true}
+          raised={true}
+          className="projectCard"
         />
-        <CardText>
+        {/* <CardText>
           <Toggle
             toggled={this.state.expanded}
             onToggle={this.handleToggle}
             labelPosition="right"
             label="Toggle to see Project"
           />
-        </CardText>
+        </CardText> */}
 
         <CardTitle title={titleText}  titleStyle={pictureTextStyle} expandable={true} />
         <CardText expandable={true} style={Color}>
           <div className = "appLinkDiv">
-            <a className="appLink" href="http://thriftstoreblackjack.surge.sh/"> View Website</a>
+            <a target="_blank"  rel="noopener noreferrer" className="appLink" href="http://thriftstoreblackjack.surge.sh/"> View </a>
           </div>
           <div className = "projectScreenshots">
             <img className="projectImages" alt = "blackjackpicture" src={WholeBlackjackSS} / >
@@ -78,13 +78,9 @@ class ProjectTwo extends Component {
 
           </div>
         </CardText>
-        <CardActions>
-          <FlatButton label="Expand" onClick={this.handleExpand} />
-          <FlatButton label="Reduce" onClick={this.handleReduce} />
-        </CardActions>
       </Card>
     );
   }
 }
 
-export default ProjectTwo
+export default BlackJack

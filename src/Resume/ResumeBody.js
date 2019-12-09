@@ -1,22 +1,26 @@
 import React from "react";
-import {Link} from "react-router-dom"
 import Resume from "./Resume.docx"
+import currentResume from "./resume-1.jpg";
 
 function ResumeBody (){
   return (
     <div>
     <div className="resumeBody">
-      <div className = "downloadButtonDiv">
-        <div className="resumeDownloadButton">
+      <div className="resumeImage">
+        <img  alt='backgroundresumepage' src={currentResume} />
+      </div>
+      <a href={Resume} download="Resume.docx" className="downloadButtonDiv">
+        {/* <div className="resumeDownloadButton">
           <Link  className="buttonText"  to="../ResumePage"> View My Resume! </Link>
-        </div>
+        </div> */}
       <div className ="resumeDownloadButton">
-        <a  className="buttonText" href={Resume} download="Resume.docx"> Download </a>
+        <div className="buttonText" href={Resume} download="Resume.docx"> Download </div>
       </div>
-      </div>
+      </a>
     </div>
     </div>
   )
 }
 
 export default ResumeBody;
+

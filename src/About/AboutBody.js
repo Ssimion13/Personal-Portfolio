@@ -1,38 +1,65 @@
 import React from "react";
 import ScottSuit from "./ScottSuit.jpg"
 
-function AboutBody (){
-  return (
-    <div className="aboutBodies">
-      <div className="personalInformation">
-        <div className="infoDivider">
-          <img alt="me" className="portrait" src={ScottSuit} />
-          <div className="contactInfo">
-            <h3> Contact Me! </h3>
-            <h4> Email: ScottSimion@gmail.com </h4>
-            <h5> Telephone: (561) 632-9726 </h5>
+class AboutBody extends React.Component {
+  constructor(){
+    super()
+
+    this.returnToTop = this.returnToTop.bind(this);
+  }
+
+  returnToTop() {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    })
+  }
+
+  render() {
+    return (
+      <div className="aboutBodies">
+        <div className="personalInformation">
+          <div className="infoDivider">
+            <img alt="me" className="portrait" src={ScottSuit} />
+            <div className="contactInfo">
+              <h4> Email: ScottSimion@gmail.com </h4>
+              <h5> Telephone: (561) 632-9726 </h5>
+            </div>
           </div>
+      </div>
+      <div>
+        <div className="aboutProfile">
+          <h1 className="bold"> Why Development? </h1>
+          <p> I originally found my passion for computer science while I was in undergraduate pre-med at the University of Missouri:
+            all of my friends later in college were CS major students who convinced me to try coding with my electives, so I did! 
+            I found their work to be fascinating and the elective classes invigorating, but my school wouldn't let me switch majors so far along in my program. 
+            After I graduated, I picked up coding again and I knew that this is what I wanted to do with my career. </p>
+        </div>
+        <div className="aboutBackground">
+          <h1 className="bold"> Values At Work? </h1>
+          <p> In the workplace, I believe that communication and hard work are the key to success. <br/> <br/>
+            In my time working as a developer, I've found that the biggest boon and the biggest killer for any project is communication.
+            I've always valued working hard and smart in everything I do, but when you're working with co-workers who are all working together on the same project,
+            it's always more important (and efficient!) to make sure that everyone is on the same page, so everything can get done as fast as possible with as little do-over as possible.
+            Lets get the work done!
+          </p>
+        </div>
+        <div className="aboutWebDevelopment">
+          <h1 className="bold"> What Got You Into Development? </h1>
+          <p> I chose web/software development as my career because I genuinely enjoy the logic and problem solving that comes with the field. 
+            There's always a new problem to be solved, a new technology to learn, a new framework... and there's always a time limit. To be honest, I kind of enjoy the race; I worked in medicine
+            and while it wasn't for me, I found the tight deadlines that can come in development as well to almost be exhilarating-- how can we solve the problem, finish the sprint as efficiently as possible?
+            It might not be the most fun question at that moment, but I find it to be really enjoyable, especially when the project is done and I can look back at what I've made.
+          </p>
         </div>
       </div>
-    <div className ="aboutProfile">
-      <h1> My Background </h1>
-      <p> I originally found my passion for computer science while I was in undergraduate school for Biology-- in my junior year and senior year I made friends with many CS major students who kept telling me how I'd love working in CS: I found their work to be fascinating and the elective classes invigorating, but my school wouldn't let me switch majors so far along in my program. "When I worked as a medical assistant, I found that while I enjoyed helping people get better, I wanted to make a difference in the world in a different way.  I found that the medical record programs and other programs I used on my job were fascinating in scope and scale.  Once I started coding and realized my work could make a difference in the world, I decided that working as a developer was truly my life's calling. </p>
-    </div>
-    <div className ="aboutBackground">
-      <h1>My Values </h1>
-      <p> In the workplace, I'm a very strong proponent of teamwork, communication, self-sufficiency, and hard work. <br/> <br/>
-      Growing up, my parents instilled in me a strong desire to learn more about the world.  I became a problem-solver because they taught me to understand <em>why</em> things work rather than <em>just</em> if they work.  I always put 100% into everything I do, especially when other people are affected by my work and counting on me.  I honestly believe that anything is possible if everyone works hard and pulls together toward a common goal.  That means that everyone must know what they need to do and how to do it.  One of my passions is competitive gaming, where I lead my team by ensuring that everyone knows their role and are working together as a team.
-      </p>
-    </div>
-    <div className ="aboutWebDevelopment">
-      <h1> Choosing Development </h1>
-      <p> I chose web/software development as my career because I genuinely enjoy the logic and problem solving that comes with the field. The feeling of accomplishment when I finish a project or even just solve a problem that has held me up is, to me, a euphoric feeling that no other career can match.".
-          People say that you should do what you love, and I have to say: I love to code.</p>
-    </div>
 
-
-    </div>
-  )
+        <div className="flex align-center justify-center">
+          <div onClick={this.returnToTop}> To Top </div>
+        </div>
+      </div>
+    )
+  }
 }
 
 export default AboutBody;

@@ -1,30 +1,47 @@
 import React from "react";
-import ProjectOne from "./ProjectOne";
-import ProjectTwo from "./ProjectTwo";
-import ProjectThree from "./ProjectThree";
-import ProjectFour from "./ProjectFour";
-import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
-function ProjectBody (){
+import JapaneseOnTheGo from "./ProjectTiles/JapaneseOnTheGo";
+import PUBGAssistant from "./ProjectTiles/PUBGAssistant";
+import DotsAndLines from "./ProjectTiles/DotsAndLines";
+import Pandora from "./ProjectTiles/Pandora";
+import AnnSummers from "./ProjectTiles/AnnSummers";
+import BlackJack from "./ProjectTiles/BlackJack";
+import LVE from "./ProjectTiles/LVE"
+import TommyBahama from './ProjectTiles/TommyBahama';
 
-  return (
-    <div className="projectDiv">
-        <div className="projects">
-          <MuiThemeProvider>
-          <ProjectFour />
-          </MuiThemeProvider>
-          <MuiThemeProvider>
-          <ProjectOne />
-          </MuiThemeProvider>
-          <MuiThemeProvider>
-          <ProjectTwo />
-          </MuiThemeProvider>
-          <MuiThemeProvider>
-          <ProjectThree />
-          </MuiThemeProvider>
+class ProjectBody extends React.Component {
+  constructor(){
+    super()
+    this.returnToTop = this.returnToTop.bind(this)
+  }
+
+  returnToTop() {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    })
+  }
+
+  render() {
+    return (
+      <div className="projectDiv">
+          <div className="projects flex align-center justify-center direction-column">
+            <Pandora />
+            <AnnSummers />
+            <TommyBahama />
+            <LVE />
+            <JapaneseOnTheGo />
+            <PUBGAssistant />
+            <DotsAndLines />
+            <BlackJack />
+          </div>
+
+          <div className="flex align-center justify-center">
+            <div onClick={this.returnToTop}> To Top </div>
+          </div>
 
         </div>
-      </div>
-  )
+    )
+  }
 }
 
 export default ProjectBody;

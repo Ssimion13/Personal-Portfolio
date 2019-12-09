@@ -7,7 +7,7 @@ import responsive from "./projectImages/Responsive.png";
 import todolist from "./projectImages/todolist.png";
 
 
-class ProjectFour extends Component {
+class ScottToDo extends Component {
 
   constructor(props) {
     super(props);
@@ -35,7 +35,7 @@ class ProjectFour extends Component {
   render() {
 
     const headerTextStyle = {
-      fontSize: "30px"
+      fontSize: "28px"
     }
     const pictureTextStyle = {
       fontSize: "25px",
@@ -45,43 +45,42 @@ class ProjectFour extends Component {
     const titleText = "A proof of concept for me to test using JSON Web Tokens with BCrypt for login and signup authentication, this app allows users to sign in and create their own private to-do lists, with three types of to-dos available for the user to use independently from each other. Uses Media queries for responsiveness for mobile devices."
 
     return (
-      <Card expanded={this.state.expanded} onExpandChange={this.handleExpandChange}>
+      <Card className="projectCard" expanded={this.state.expanded} onExpandChange={this.handleExpandChange}>
         <CardHeader
           title="Scott To-Do"
           titleStyle= {headerTextStyle}
-          subtitle="MERN Responsive Project with JWT Authentication and React-BootStrap"
+          subtitle="MERN Responsive Personal Project with JWT Authentication and React-BootStrap"
           avatar={frontpage}
           actAsExpander={true}
           showExpandableButton={true}
+          raised={true}
+          className="projectCard"
         />
-        <CardText>
+        {/* <CardText>
           <Toggle
             toggled={this.state.expanded}
             onToggle={this.handleToggle}
             labelPosition="right"
             label="Toggle to see Project"
           />
-        </CardText>
+        </CardText> */}
 
         <CardTitle title={titleText}  titleStyle={pictureTextStyle} expandable={true} />
         <CardText expandable={true} style={Color}>
-          <div className="appLinkDiv">
-            <a className="appLink" href="https://scott-to-do.herokuapp.com/"> View Website</a>
+          <div className="appLinkDiv flex align-center justify-between">
+            <a target="_blank" className="appLink" href="http://lvendoscopy.s3-website-us-east-1.amazonaws.com/"> View </a>
+            <a target="_blank" className="appLink" href="https://github.com/Ssimion13/ScottToDo"> View Github </a>
           </div>
           <div className = "projectScreenshots">
-            <img className="projectImages" alt = "frontpage" src={frontpage} / >
-            <img className="projectImages" alt = "responsive" src={responsive} / >
-            <img className="projectImages" alt = "todolist" src={todolist} / >
+            <img className="projectImages" alt = "frontpage" src={frontpage} />
+            <img className="projectImages" alt = "responsive" src={responsive} />
+            <img className="projectImages" alt = "todolist" src={todolist} />
 
           </div>
         </CardText>
-        <CardActions>
-          <FlatButton label="Expand" onClick={this.handleExpand} />
-          <FlatButton label="Reduce" onClick={this.handleReduce} />
-        </CardActions>
       </Card>
     );
   }
 }
 
-export default ProjectFour
+export default ScottToDo
