@@ -35,11 +35,11 @@ class ProjectBody extends React.Component {
             <BlackJack />
           </div>
 
-          {/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) &&
+          {/* {/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) &&
             <div className="flex align-center justify-center">
               <div onClick={this.returnToTop}> To Top </div>
             </div>
-          }
+          } */}
 
         </div>
     )

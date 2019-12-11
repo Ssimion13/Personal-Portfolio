@@ -77,7 +77,7 @@ class mainBody extends React.Component {
               <h1 className={` ${time > 4000 ? 'fade-in' : 'fade-out'} text-align-center margin-top-medium text-title`} > Let's build some websites. </h1>
             </div>
           </div>
-          <div className="thumbnailDiv">
+          {/* <div className="thumbnailDiv">
             <div className="thumbnailHolder">
                 <div onClick={() => this.setSection('aboutSection')} className={`thumbnail ${time > 1000 ? 'fade-in' : 'fade-out'}`}>
                   <div>
@@ -99,16 +99,10 @@ class mainBody extends React.Component {
                     </div>
                 </div>
             </div>
-          </div>
-          {currentSection === 'aboutSection' &&
+          </div> */}
             <About />
-          }
-          {currentSection === 'projectSection' &&
             <Projects />
-          }
-          {currentSection === 'resumeSection' &&
             <Resume />
-          }
         </div>
     )
   }

@@ -24,8 +24,7 @@ class Projects extends React.Component {
         <div className="projectHeader">
           <div className="projectHeaderDiv">
             <div className="width-80">
-              <h2> These are some of the projects, both personal and professional that I have worked on in my career so far. </h2>
-              <h2> For all sites, I have attached a link to view the site in its live state. When possible, I have also included the github repository for that project. </h2>
+              <h2> These are some of the projects, both personal and professional that I have worked on. </h2>
             </div>
           </div>
         </div>

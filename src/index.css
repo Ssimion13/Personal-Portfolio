@@ -3,6 +3,7 @@
 }
 a {
   text-decoration: none;
+
 }
 
 #root {
@@ -14,6 +15,7 @@ a {
 
 .mainBodyDiv {
   width: 100%;
+  height: 90vh;
 }
 
 /* Home */
@@ -73,7 +75,7 @@ a {
 
 
 .frontText {
-  height: 55vh;
+  height: 100%;
   background: linear-gradient(#000000, #222222);
   color: #fff;
   display: flex;
@@ -106,16 +108,39 @@ a {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding-bottom: 80px;
 }
 
-.navbar {
+.navbarDiv {
   width: 100%;
   height: 80px;
   display: flex;
   justify-content: space-around;
   opacity: 0.95;
+  position: fixed;
+  top: 0;
+  z-index: 5;
 }
+
+.navbarTop {
+  background-color: white;
+  color: #000000 !important;
+  transition: 0.5s;
+}
+
+.navbarTop a {
+  color: #000000;
+}
+
+.navbarBottom {
+  background-color: #000000;
+  color: white !important;
+  transition: 0.5s;
+}
+
+.navbarBottom a {
+  color: white;
+}
+
 .links {
   font-size: 25px;
   font-weight: bold;
@@ -134,7 +159,6 @@ a {
 .navbarLinks {
   font-size: 25px;
   font-weight: bold;
-  color: #222222;
   border-radius: 15px;
   margin-top: auto;
   margin-bottom: auto;
@@ -208,16 +232,14 @@ a {
 /* end Footer Items */
 
 .title {
-  width: 100%;
-  height: 600px;
-  font-family: 'Roboto', sans-serif;
-  color: white;
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-
+  height: 10vh;
 }
+
+.titleText {
+  font-weight: 400;
+  font-size: 36px;
+}
+
 .portrait {
   width: 400px;
   height: 550px;
@@ -253,7 +275,7 @@ a {
   display: flex;
   flex-direction: column;
 }
-.contactInfo {
+.infoSubset {
   margin-top: 20px;
   margin-bottom: 10px;
   font-size: 25px;
@@ -314,11 +336,17 @@ a {
 }
 
 .aboutBodies {
-  background-color: #F8F8FF;
   display: flex;
   padding-top: 20px;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.aboutText {
+  font-size: 20px;
 
 }
+
 .aboutWebDevelopment {
   grid-area: aboutWeb;
   font-size: 25px;
@@ -408,7 +436,7 @@ img {
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-
+  padding-bottom: 80px;
 }
 .buttonText {
   font-size: 30px;
@@ -459,6 +487,8 @@ img {
     display: block;
     padding-top: 20px;
     padding-bottom: 20px;
+    padding-left: 0px;
+    padding-right: 0px;
   }
   .thumbnail {
     width:60%;
@@ -478,6 +508,7 @@ img {
   }
   .resumeBody {
     width: 400px;
+    padding-bottom: 40px;
   }
   .downloadButtonDiv {
     width: 80%;
