@@ -123,12 +123,12 @@ a {
 
 .navbarTop {
   background-color: white;
-  color: #000000 !important;
+  color: #222222 !important;
   transition: 0.5s;
 }
 
 .navbarTop a {
-  color: #000000;
+  color: #222222;
 }
 
 .navbarBottom {

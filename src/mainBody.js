@@ -1,7 +1,4 @@
 import React from "react";
-import hbutton from "./Images/hbutton.png";
-import rbutton from "./Images/rbutton.png";
-import abutton from "./Images/abutton.jpg";
 import About from './About/About.js'
 import Projects from './Projects/Projects.js'
 import Resume from './Resume/Resume.js'
@@ -62,7 +59,6 @@ class mainBody extends React.Component {
   }
 
   render() {
-    const {currentSection} = this.state
     const {time} = this.props
     return (
         <div className = "body">
