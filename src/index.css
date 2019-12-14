@@ -76,7 +76,7 @@ a {
 
 .frontText {
   height: 100%;
-  background: linear-gradient(#000000, #222222);
+  background: linear-gradient(#000000, #111111);
   color: #fff;
   display: flex;
   flex-direction: column;
@@ -121,10 +121,27 @@ a {
   z-index: 5;
 }
 
+.hamburgerMenu {
+  position: fixed;
+  left: 0;
+  top: 0; 
+  width: 25vw;
+  height: 100%;
+  background-color: white;
+  color: black;
+}
+
+.hamburgerButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+}
+
 .navbarTop {
   background-color: white;
   color: #222222 !important;
-  transition: 0.5s;
+  transition: 1s;
 }
 
 .navbarTop a {
@@ -132,9 +149,9 @@ a {
 }
 
 .navbarBottom {
-  background-color: #000000;
+  background-color: #020202;
   color: white !important;
-  transition: 0.5s;
+  transition: 1s;
 }
 
 .navbarBottom a {
@@ -156,6 +173,7 @@ a {
   text-decoration: none;
 }
 
+
 .navbarLinks {
   font-size: 25px;
   font-weight: bold;
@@ -164,6 +182,13 @@ a {
   margin-bottom: auto;
   padding: 8px;
   font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+
+.hamburgerLinks {
+  height: 33vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .navbarLinks:hover {
@@ -243,7 +268,7 @@ a {
 .portrait {
   width: 400px;
   height: 550px;
-  border-radius: 5%;
+  border-radius: 20px;
   padding: 5px;
 }
 .Name {
@@ -340,6 +365,13 @@ a {
   padding-top: 20px;
   padding-left: 10%;
   padding-right: 10%;
+}
+
+.aboutSplitter {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items:center;
 }
 
 .aboutText {
@@ -521,6 +553,14 @@ img {
   .resumeDownloadButton {
     width: 100%;
     border-radius: 10px;
+  }
+
+  .aboutSplitter {
+    width: auto;
+  }
+
+  .hamburgerMenu {
+    width: 50vw;
   }
 
 }

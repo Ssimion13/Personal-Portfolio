@@ -22,21 +22,20 @@ class AboutBody extends React.Component {
           <h2 className="titleText"> About Me </h2>
         </div>
         <div className="aboutBodies">
-        <div className="personalInformation">
-          <div className="infoDivider">
+        <div className="personalInformation aboutSplitter">
             <img alt="me" className="portrait" src={ScottSuit} />
             <div className="infoSubset">
               <h4> Email: ScottSimion@gmail.com </h4>
               <h5> Telephone: (561) 632-9726 </h5>
             </div>
-          </div>
       </div>
-        <div>
+        <div className="aboutSplitter">
           <div className="aboutProfile">
             <h1 className="bold"> Why Web Development? </h1>
               <p className="aboutText">
                 There's something distinctly satisfying about creating something, then looking back at it and saying "I built that!"; with development, 
-                you get that kind of satisfaction every day. I get to not just learn new languages and concepts, but actually apply them at work-- that's hard to beat.
+                you get that kind of satisfaction every day. It's awesome to have a job where I can learn a new concept, a new language, and not just get hands on with it, but actually see 
+                it at work for anyone using the site you're working on? It's truly amazing.
               </p>
           </div>
           <div className="aboutWebDevelopment">
